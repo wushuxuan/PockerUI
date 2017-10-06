@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view class="indexTop">
+    <view class="TopImg">
+      <image src="../../images/logo.png"></image>
+    </view>
+    <view class="TopText">
+      <view class="text_center fontWeight">pockerUI</view>
+    </view>
+  </view>
+
+
+  <view class="indexContent">
+    <navigator wx:for="{{indexList}}" wx:key="{{indexList}}" class="flex-wrap fontSize35" url="{{item.url}}">
+        <view class="text-left">{{item.name}}</view>
+        <view class="text-right">〉</view>
+    </navigator>
+  </view>
+</view>

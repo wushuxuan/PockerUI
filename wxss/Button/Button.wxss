@@ -1,0 +1,27 @@
+/* pages/Button/Button.wxss */
+.doc-title{
+  width:90%;
+  margin:20px auto 100rpx;
+  padding:10px 0px;
+  border-bottom: 1px solid #ddd;
+  font-size: 60rpx;
+  color:#707070;
+}
+.free-panel{
+  margin-bottom:50rpx;
+}
+.free-panel-title{
+  width:90%;
+  margin:10px 5%;
+  color:#707070;
+  font-size:35rpx;
+}
+.free-btns{
+  width:90%;
+  background:#fff;
+  padding:20px 5%;
+}
+
+.free-btn-mini{
+  margin:0px 3px;
+}

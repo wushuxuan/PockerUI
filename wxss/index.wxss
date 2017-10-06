@@ -1,0 +1,3 @@
+/**index.wxss**/
+@import "Button/Button.wxss";
+@import "Badege/Badege.wxss";

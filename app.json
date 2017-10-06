@@ -1,0 +1,19 @@
+{
+  "pages":[
+      "pages/Badege/Badege",
+    "pages/index/index",
+    "pages/Button/Button",
+ 
+    "pages/Capsule/Capsule",
+    "pages/Card/Card",
+    "pages/Cell/Cell"
+
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#393A3F",
+    "navigationBarTitleText": "PockerUI",
+    "navigationBarTextStyle":"white"
+  }
+}
