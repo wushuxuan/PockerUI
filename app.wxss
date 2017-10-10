@@ -8,7 +8,11 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  overflow-x:hidden 
 } 
+.free-panel{
+  width:100%;
+}
 page{
   background: #F9F9F9;
 }
@@ -36,11 +40,25 @@ page{
   padding:15px 0px;
   border-bottom:1px solid #eee;
 }
+
+.RightArrow{
+  width:50rpx;
+  height:50rpx;
+}
+
+.flex-wrap>view{
+  width: 50%;
+  display: inline-block;
+}
+/*字体*/
+.fontWeight{
+  font-weight: bold;
+}
+.fontSize35{
+  font-size:35rpx;
+}
 .text-right{
   font-weight: 900;
-}
-view{
-  width:100%;
 }
 .text_center{
   text-align: center;
@@ -48,22 +66,24 @@ view{
 .text-right{
   text-align: right;
 }
-.RightArrow{
-  width:50rpx;
-  height:50rpx;
-}
-.fontWeight{
-  font-weight: bold;
-}
-.fontSize35{
-  font-size:35rpx;
-}
-.flex-wrap>view{
-  width: 50%;
-  display: inline-block;
-}
 
 /*按钮*/
 button{
   margin:10px 0px;
+}
+
+/*控制元素是否显示*/
+.true{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+
+/*注释*/
+.note{
+  font-size:28rpx;
+  color: #707070;
+  padding-left:15px;
+  margin:5px 0px 15px;
 }

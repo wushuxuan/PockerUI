@@ -1,0 +1,26 @@
+.free-panel{
+  padding-left:10%;
+}
+.free-capsule{
+  position: relative;
+}
+.free-capsule-badge1{
+  position: absolute;
+  right:-65%;
+  top:-0.5%;
+  font-size:8px;
+  border:1px solid red;
+  color:red;
+  border-radius: 0.8em;
+  padding:0 1em;
+}
+.free-capsule-badge2{
+  position: absolute;
+  right:-130%;
+  top:-0.5%;
+  font-size:8px;
+  border:1px solid #48c23d;
+  color:#48c23d;
+  border-radius: 0.8em;
+  padding:0 1em;
+}

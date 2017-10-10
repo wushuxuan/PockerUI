@@ -21,8 +21,8 @@ Page({
         name: 'Cell 单元格',
         url: '../Cell/Cell'
       },{
-        name: 'Dialog 弹出框',
-        url: '../Dialog/Dialog'
+        name: 'Picker 自定义选择器',
+        url: '../Picker/Picker'
       },{
         name: 'Form 表单',
         url: '../Form/Form'

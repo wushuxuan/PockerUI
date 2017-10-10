@@ -1,3 +1,5 @@
 /**index.wxss**/
 @import "Button/Button.wxss";
 @import "Badege/Badege.wxss";
+@import "Picker/Picker.wxss";
+@import "Capsule/Capsule.wxss";

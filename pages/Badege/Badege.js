@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    show:0,
+    number:0
   },
 
+  AddSeal:function(){
+    var number = this.data.number+1
+    var that=this
+    that.setData({
+      number:number,
+      show:1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this
+    that.setData({
+      number: 0
+    })
   },
 
   /**

@@ -1,0 +1,33 @@
+<!--pages/Dialog/Dialog.wxml-->
+<view class="container">
+ <view class="doc-title">Picker 自定义选择器</view>
+
+  <view class="free-btns" style="margin-top: 10vh;background:none;">
+    <button class="free-btn" bindtap="toggleDialog">
+      选定国家：{{value}}
+    </button>
+  </view>
+
+  <view class="free-dialog {{ showDialog ? 'free-dialog--show' : '' }}">
+    <view class="free-dialog__mask" bindtap="toggleDialog" />
+    <view class="free-dialog__container">
+      <view style="padding: 5% 5% 15%;">
+        <form bindsubmit='submit' bindreset="reset">
+          <view bindtap='freetoBack' class="free-button free-dialog-reset">取消</view>
+          <view bindtap='freeBack' class="free-button free-dialog-submit">确定</view>
+
+          <radio-group class='free-radios' bindchange="radioChange">
+            <label class="free-radio" wx:for="{{items}}" wx:key="{{items}}">
+              <radio value="{{item.name}}" name="{{item.value}}"></radio>
+              <label class="free-text">{{item.value}}</label>
+            </label>
+          </radio-group>
+        </form>
+      
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

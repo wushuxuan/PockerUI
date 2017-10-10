@@ -1,2 +1,62 @@
 <!--pages/Badege/Badege.wxml-->
-<text>pages/Badege/Badege.wxml</text>
+<view class="container">
+  <view class="doc-title">Badge</view>
+
+  <view class="free-panel-title">普通印章</view>
+  <view class="free-panel">
+    <view class="free-bdgs">
+      <view class="free-bdg">
+        
+      </view>
+
+       <view class="free-bdg">
+        <view class="free-seals">
+          <view class="free-seal">9</view>
+        </view>
+      </view>
+
+        <view class="free-bdg">
+          <view class="free-seals">
+            <view class="free-seal">19</view>
+          </view>
+         </view>
+       <view class="free-bdg">
+        <view class="free-seals">
+          <view class="free-seal">99+</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+ 
+
+
+
+
+  <view class="free-panel-title">js控制是否显示印章</view>
+  <view class="note"><text class="fontWeight">注释</text>：在js中data: {}定义show:0(假，不会显示)或show:1(真，会显示);点击确认订单印章会自增长</view>
+  <view class="free-panel">
+    <view class="free-bdg">
+      <view class="free-seals">
+        <view class="free-seal {{show?'true':'hidden'}}">{{number}}</view>
+      </view>
+    </view>
+      <button bindtap="AddSeal" size="mini" type="primary">确认订单</button>
+  </view>
+
+
+
+
+   <view class="free-panel-title">图片印章</view>
+   <view class="free-panel">
+    <view class="free-bdg-img">
+    <image src="../../images/BuyCar.png">
+      <view class="free-seal">9</view>
+    </image>
+    </view>  
+   </view>
+</view>
+
+
+

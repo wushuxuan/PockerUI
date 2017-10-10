@@ -1,2 +1,13 @@
 <!--pages/Capsule/Capsule.wxml-->
-<text>pages/Capsule/Capsule.wxml</text>
+<view class="container">
+  <view class="doc-title">Capsule 胶囊</view>
+
+  <view class="free-panel-title">左上角</view>
+  <view class="free-panel">
+    <text class="free-capsule">
+    <text class="free-capsule-text">桂花龙井</text>
+    <text class="free-capsule-badge1">满减</text>
+    <text class="free-capsule-badge2">新品</text>
+    </text>
+  </view>
+</view>

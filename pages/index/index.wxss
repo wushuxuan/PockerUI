@@ -3,6 +3,9 @@
 page{
   background: #f2f3f5;
 }
+view{
+  width:100%;
+}
 .indexTop{
   padding:30px 0px 20px;
   background:#fff;
@@ -11,8 +14,8 @@ page{
   text-align: center;
 }
 .TopImg image{
-  width:200rpx;
-  height:200rpx;
+  width:300rpx;
+  height:300rpx;
 }
 .TopText{
   padding:15px 0px;
@@ -24,8 +27,11 @@ page{
   padding-left:10px;
 }
 .flex-wrap{
-  padding:15px 0px;
   border-bottom:1px solid #eee;
+}
+.flex-wrap view{
+  display: inline-block;
+  width:49%;
 }
 .text-right{
   font-weight: 900;

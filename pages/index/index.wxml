@@ -5,9 +5,6 @@
     <view class="TopImg">
       <image src="../../images/logo.png"></image>
     </view>
-    <view class="TopText">
-      <view class="text_center fontWeight">pockerUI</view>
-    </view>
   </view>
 
 
