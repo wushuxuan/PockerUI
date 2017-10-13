@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    show:false,
     RightArrow:'../../images/RightArrow.png',
     indexList: [{
       name:'Button 按钮',

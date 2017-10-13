@@ -26,6 +26,7 @@
   <view class="free-panel-title">功能按钮</view>
   <view class="free-panel">
     <view class="free-btns">
+      <button class="free-btn" disabled='{{disabled}}' bindtap='disabledChange'>点击之后变为不可用按钮</button>
       <button class="free-btn" open-type="contact">联系客服</button>
       <button class="free-btn" type="primary" open-type="share">转发</button>
       <!--注意：目前该接口针对非个人开发者，且完成了认证的小程序开放。需谨慎使用，若用户举报较多或被发现在不必要场景下使用，微信有权永久回收该小程序的该接口权限。-->

@@ -4,10 +4,13 @@
 
   <view class="free-panel-title">左上角</view>
   <view class="free-panel">
-    <text class="free-capsule">
+  <view class="free-capsule">
+    <text class="free-capsules">
     <text class="free-capsule-text">桂花龙井</text>
     <text class="free-capsule-badge1">满减</text>
     <text class="free-capsule-badge2">新品</text>
     </text>
+  </view>
+
   </view>
 </view>

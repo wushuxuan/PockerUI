@@ -1,6 +1,9 @@
 /**app.wxss**/
 @import "wxss/index.wxss";
 
+
+
+
 .container {
   height: 100%;
   display: flex;
@@ -56,6 +59,9 @@ page{
 }
 .fontSize35{
   font-size:35rpx;
+}
+.fontSize30{
+  font-size:30rpx;
 }
 .text-right{
   font-weight: 900;

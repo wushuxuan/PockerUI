@@ -1,14 +1,12 @@
 {
   "pages":[
-    "pages/Capsule/Capsule",
     "pages/index/index",
+    "pages/Card/Card",
     "pages/Button/Button",
     "pages/Badege/Badege",
     "pages/Picker/Picker",
-    "pages/Card/Card",
+    "pages/Capsule/Capsule",
     "pages/Cell/Cell"
-
-
   ],
   "window":{
     "backgroundTextStyle":"light",

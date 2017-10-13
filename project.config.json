@@ -9,7 +9,7 @@
 	"compileType": "weapp",
 	"libVersion": "1.5.4",
 	"appid": "wxf6a995507455d41e",
-	"projectname": "PockerUI",
+	"projectname": "FreeUI",
 	"condition": {
 		"weapp": {
 			"current": -1,

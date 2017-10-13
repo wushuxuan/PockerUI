@@ -17,9 +17,9 @@
   font-size:35rpx;
 }
 .free-btns{
-  width:90%;
+  width:95%;
   background:#fff;
-  padding:20px 5%;
+  padding:20px 2.5%;
 }
 
 .free-btn-mini{

@@ -1,7 +1,5 @@
-.free-panel{
-  padding-left:10%;
-}
-.free-capsule{
+
+.free-capsules{
   position: relative;
 }
 .free-capsule-badge1{

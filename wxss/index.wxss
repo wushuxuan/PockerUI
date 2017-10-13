@@ -3,3 +3,4 @@
 @import "Badege/Badege.wxss";
 @import "Picker/Picker.wxss";
 @import "Capsule/Capsule.wxss";
+@import "Card/Card.wxss";

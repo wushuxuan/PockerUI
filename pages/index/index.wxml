@@ -14,4 +14,9 @@
         <view class="text-right">〉</view>
     </navigator>
   </view>
+
+  <!--客服对话-->
+  <button wx:if="{{show !=''}}" class="free-contactButton" open-type='contact'>
+    <view class="iconfont icon-duihuaxinxi"></view>
+  </button>
 </view>
