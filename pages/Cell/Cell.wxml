@@ -1,1 +1,7 @@
 <!--pages/Cell/Cell.wxml-->
+<view wx:for="{{array}}" class="chose-txt" data-id="{{index}}" bindtap="choseTxtColor"  style="{{index == id?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">  
+    
+    <text class="chose-p" >{{item.name}}</text>  
+    <text class="chose-p" >{{item.price}}元</text>  
+
+</view>  

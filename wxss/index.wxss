@@ -4,3 +4,4 @@
 @import "Picker/Picker.wxss";
 @import "Capsule/Capsule.wxss";
 @import "Card/Card.wxss";
+@import "Cell/Cell.wxss";

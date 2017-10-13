@@ -1,1 +1,7 @@
 /* pages/Button/Button.wxss */
+.chose-txt{  
+  border-radius: 6px;  font-size: 26rpx;   height: 40px;  width:  27.5%;  margin: 5px; float: left;padding-top: 5px;  
+}  
+.chose-p{  
+  line-height: 18px; width: 100%; height:20px; text-align:  center; float: left;  
+}  

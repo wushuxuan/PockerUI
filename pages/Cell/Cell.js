@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    image_src:'../../images/longbefore.jpg'
+    array: [{ name: '单拍', price: '198' }, { name: '亲子套餐', price: '398' }, { name: '活动套餐', price: '598' }, { name: '女王套餐', price: '1198' }],
+    id: 0,             //进入页面时，默认选择第0个，如果不需要默认选中，注释掉就可以了  
+  },
+  choseTxtColor: function (e) {
+    console.log(e.currentTarget.dataset.id)
+    var id = e.currentTarget.dataset.id;  //获取自定义的ID值  
+    this.setData({
+      id: id
+    })
   },
 
   /**

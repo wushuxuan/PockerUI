@@ -16,6 +16,14 @@ Page({
       { name: '俄罗斯', value: '俄罗斯' },]
 
   },
+  /*点击变色*/
+  click:function(e){
+    var id = e.currentTarget.dataset.id
+    var that = this
+    that.setData({
+      id:id
+    })
+  },
   onLoad: function (options) {
     var that = this
     that.setData({

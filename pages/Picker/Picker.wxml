@@ -17,7 +17,8 @@
           <view bindtap='freeBack' class="free-button free-dialog-submit">确定</view>
 
           <radio-group class='free-radios' bindchange="radioChange">
-            <label class="free-radio" wx:for="{{items}}" wx:key="{{items}}">
+            <label class="free-radio" bindtap="click" wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}"
+            style="{{index==id?'background:#48c23d;color:#fff;':'background:#fff;color:#000;'}}">
               <radio value="{{item.name}}" name="{{item.value}}"></radio>
               <label class="free-text">{{item.value}}</label>
             </label>
