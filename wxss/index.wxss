@@ -3,5 +3,6 @@
 @import "Badege/Badege.wxss";
 @import "Picker/Picker.wxss";
 @import "Capsule/Capsule.wxss";
+@import "Image/Image.wxss";
 @import "Card/Card.wxss";
 @import "Cell/Cell.wxss";

@@ -1,18 +1,38 @@
 // pages/Template/Template.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
-  },
 
+  },
+  ChooseImage:function(){
+    var that = this
+    wx.chooseImage({
+      count:'9',
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        wx.saveFile({
+          tempFilePath: tempFilePaths[0],
+          success: function (res) {
+            that.setData({
+              savedFilePath: res.savedFilePath
+            })
+          }
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this
+      that.setData({
+        savedFilePath: '../../images/Images.png'
+      })
   },
 
   /**

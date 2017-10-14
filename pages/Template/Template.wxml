@@ -2,7 +2,7 @@
 <view class="container">
 <view class="doc-title">各种模板</view>
 
-<view class="free-panel-title">固定页面底部技术支持</view>
+<view class="free-panel-title">固定页面标题</view>
 <view class="free-panel">
   <view class="free-Template">
     <template name="free-doc-title">

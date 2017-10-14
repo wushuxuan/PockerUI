@@ -1,13 +1,13 @@
 <!--pages/Cell/Cell.wxml-->
+<import src="../Template/Template.wxml"/>
 <view class="container">
-<view class="doc-title">各种模板</view>
+  <template is="free-doc-title" data="{{doc_title:'Image 上传照片'}}"/>
 
-<view class="free-panel-title">固定页面底部技术支持</view>
-<view class="free-panel">
-  <view class="free-Template">
-    <template name="free-doc-title">
-      <view class="doc-title">{{doc_title}}</view>
-    </template>
+  <view class="free-panel-title">上传照片</view>
+  <view class="free-panel">
+    <view class="free-Images">
+      <image bindtap="ChooseImage" class="free-chooseImage" mode="widthFix" src="{{savedFilePath}}"></image>
+      <button bindtap="ChooseImage" size="mini" type="primary">上传照片</button>
+    </view>
   </view>
-</view>
 </view>

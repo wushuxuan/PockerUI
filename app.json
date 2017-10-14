@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/Image/Image",
+  "pages/Image/Image",
   "pages/index/index",
   "pages/Picker/Picker",
   "pages/Card/Card",
