@@ -1,6 +1,7 @@
 <!--pages/Capsule/Capsule.wxml-->
+<import src="../Template/Template.wxml"/>
 <view class="container">
-  <view class="doc-title">Capsule 胶囊</view>
+  <template is="free-doc-title" data="{{doc_title:'Capsule 胶囊'}}"/>
 
   <view class="free-panel-title">左上角</view>
   <view class="free-panel">

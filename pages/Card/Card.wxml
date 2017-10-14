@@ -1,6 +1,7 @@
 <!--pages/Card/Card.wxml-->
-<view class="container">
-  <view class="doc-title">Card 卡片组</view>
+<import src="../Template/Template.wxml"/>
+<view class="container">  
+  <template is="free-doc-title" data="{{doc_title:'Card 卡片组'}}"/>
 
   <view class="free-panel">
     <view class="free-panel-title">width:50%的卡片</view>

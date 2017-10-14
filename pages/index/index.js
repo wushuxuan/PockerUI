@@ -19,14 +19,11 @@ Page({
         name: 'Card 卡片',
         url: '../Card/Card'
       },{
-        name: 'Cell 单元格',
-        url: '../Cell/Cell'
-      },{
         name: 'Picker 自定义选择器',
         url: '../Picker/Picker'
       },{
-        name: 'Form 表单',
-        url: '../Form/Form'
+        name: 'Image 上传图片',
+        url: '../Image/Image'
       },
     ]
   },

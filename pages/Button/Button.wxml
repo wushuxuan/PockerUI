@@ -1,6 +1,7 @@
 <!--pages/Button/Button.wxml-->
+<import src="../Template/Template.wxml"/>
 <view class="container">
-  <view class="doc-title">Button 按钮</view>
+  <template is="free-doc-title" data="{{doc_title:'Button 按钮'}}"/>
 
 
 

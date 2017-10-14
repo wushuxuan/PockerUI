@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    title:'Button 按钮'
   },
 
   getPhoneNumber:function(e){

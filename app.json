@@ -1,13 +1,13 @@
 {
   "pages":[
+    "pages/Image/Image",
+  "pages/index/index",
   "pages/Picker/Picker",
-    "pages/index/index",
-    "pages/Cell/Cell",
-    "pages/Card/Card",
-    "pages/Button/Button",
-    "pages/Badege/Badege",
- 
-    "pages/Capsule/Capsule"
+  "pages/Card/Card",
+  "pages/Button/Button",
+  "pages/Cell/Cell",
+  "pages/Badege/Badege",
+  "pages/Capsule/Capsule"
   ],
   "window":{
     "backgroundTextStyle":"light",

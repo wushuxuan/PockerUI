@@ -1,7 +1,9 @@
 <!--pages/Cell/Cell.wxml-->
-<view wx:for="{{array}}" class="chose-txt" data-id="{{index}}" bindtap="choseTxtColor"  style="{{index == id?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">  
-    
-    <text class="chose-p" >{{item.name}}</text>  
-    <text class="chose-p" >{{item.price}}元</text>  
+<view class="container">
+  <view class="doc-title">Template 模板</view>
 
-</view>  
+  <view class="free-panel">
+  <view class="free-panel-title" style="width:100%;">模板使用 (模板在pages/Template.wxml里)</view>
+  
+  </view>
+</view>

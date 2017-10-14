@@ -1,6 +1,7 @@
 <!--pages/Badege/Badege.wxml-->
+<import src="../Template/Template.wxml"/>
 <view class="container">
-  <view class="doc-title">Badge</view>
+  <template is="free-doc-title" data="{{doc_title:'Badge'}}"/>
 
   <view class="free-panel-title">普通印章</view>
   <view class="free-panel">
