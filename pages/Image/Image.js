@@ -1,4 +1,3 @@
-// pages/Template/Template.js
 
 Page({
 
@@ -6,12 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
   },
-  ChooseImage:function(){
+  onLoad: function (options) {
+      var that = this
+      that.setData({
+        savedFilePath: '../../images/Images.png'
+      })
+  },
+  ChooseImage: function () {
     var that = this
     wx.chooseImage({
-      count:'9',
+      count: '9',
       success: function (res) {
         var tempFilePaths = res.tempFilePaths
         wx.saveFile({
@@ -25,16 +30,6 @@ Page({
       }
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    var that = this
-      that.setData({
-        savedFilePath: '../../images/Images.png'
-      })
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

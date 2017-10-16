@@ -1,0 +1,20 @@
+/* pages/SearchMore/SearchMore.wxss */
+.free-card-SearchMore{
+  width:85%;
+  padding:2.5%;
+  margin-left:2.5%;
+  background:#fff;
+  margin-top:-100px;
+  position:absolute;
+  z-index: -1;
+  border:1px solid #ddd;
+  border-top:none;
+} 
+.true{
+  transition: all 0.5s;
+  transform: translateY(100px)
+}
+.no{
+  transition: all 0.5s;
+  transform: translateY(0px)
+}
