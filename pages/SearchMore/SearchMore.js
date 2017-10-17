@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    icon: 'icon-more'
+    icon: 'icon-more',
+    list: [{ name: '大众朗逸' }, { name: '荣威E550' }]
   },
 
   /**
@@ -14,18 +15,14 @@ Page({
   onLoad: function (options) {
 
   },
-  SearchMore:function(){
+  SearchMore:function(e){
        var that = this
-       if (this.data.icon == 'icon-more'){
-         that.setData({
-           icon: 'icon-moreunfold',
-           slide:1
-         })
-       }else{
-         that.setData({
-           icon: 'icon-more',
-           slide: 0
-         })
+       var id = e.currentTarget.dataset.id
+       console.log(e.currentTarget.dataset.id)
+
+
+       if (e.currentTarget.dataset.id==0){
+         
        }
   },
   /**

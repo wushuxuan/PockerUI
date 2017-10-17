@@ -1,0 +1,45 @@
+/* pages/navigation/navigation.wxss */
+.free-navs-common{
+  width:90%;
+  margin:0 auto;
+  border:1px solid red;
+  display: flex;
+}
+.free-common-nav{
+  width:20%;
+  font-size:28rpx;
+  padding:20rpx 0;
+  text-align: center;
+  display: inline-block;
+}
+.free-common-title{
+  width:100%;
+  padding:100rpx 0;
+  margin-top:20rpx;
+  text-align: center;
+  display: none;
+  border-bottom:3px solid #eee;
+}
+
+/*步骤分栏导航*/
+.free-step-navs{
+  width:90%;
+  margin:0 auto;
+}
+.free-step-nav{
+  width:100%;
+  text-align: center;
+}
+.iconfont{
+  color:#707070;
+  display: inline-block;
+  margin:0px 10rpx;
+}
+/*步骤按钮*/
+.buttons{
+  text-align: center;
+}
+.buttons button{
+  display: inline-block;
+  margin:100rpx 5rpx;
+}

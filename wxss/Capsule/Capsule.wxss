@@ -1,24 +1,19 @@
 
 .free-capsules{
+  height:1em;
+}
+.free-capsules>view{
+  display: inline-block;
+}
+.free-capsule-badges{
   position: relative;
+  height:1em;
+  margin-left:0.3em;
 }
-.free-capsule-badge1{
-  position: absolute;
-  right:-65%;
-  top:-0.5%;
-  font-size:8px;
+.free-capsule-badge{
   border:1px solid red;
+  font-size:0.5em;
   color:red;
-  border-radius: 0.8em;
-  padding:0 1em;
-}
-.free-capsule-badge2{
-  position: absolute;
-  right:-130%;
-  top:-0.5%;
-  font-size:8px;
-  border:1px solid #48c23d;
-  color:#48c23d;
   border-radius: 0.8em;
   padding:0 1em;
 }

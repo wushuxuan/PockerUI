@@ -7,15 +7,16 @@
 @import "Card/Card.wxss";
 @import "Cell/Cell.wxss";
 @import "SearchMore/SearchMore.wxss";
+@import "navigation/navigation.wxss";
 
 
 @font-face {
   font-family: 'iconfont';  /* project id 439570 */
-  src: url('//at.alicdn.com/t/font_439570_7j9e92ph5omvx6r.eot');
-  src: url('//at.alicdn.com/t/font_439570_7j9e92ph5omvx6r.eot?#iefix') format('embedded-opentype'),
-       url('//at.alicdn.com/t/font_439570_7j9e92ph5omvx6r.woff') format('woff'),
-       url('//at.alicdn.com/t/font_439570_7j9e92ph5omvx6r.ttf') format('truetype'),
-       url('//at.alicdn.com/t/font_439570_7j9e92ph5omvx6r.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_439570_u7vfdvybzvholxr.eot');
+  src: url('//at.alicdn.com/t/font_439570_u7vfdvybzvholxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_439570_u7vfdvybzvholxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_439570_u7vfdvybzvholxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_439570_u7vfdvybzvholxr.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -24,7 +25,8 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-straightLine:before { content: "\e60b"; }/*直线*/
+.icon-stepsIcon:before { content: "\e638"; }/*步骤未进行图标*/
 .icon-all:before { content: "\e696"; }
 .icon-back:before { content: "\e697"; }
 .icon-cart:before { content: "\e698"; }

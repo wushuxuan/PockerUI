@@ -29,6 +29,10 @@ Page({
         name: 'SearchMore 查看更多',
         url: '../SearchMore/SearchMore'
       },
+      {
+        name: 'navigation 分栏导航',
+        url: '../navigation/navigation'
+      },
     ]
   },
 

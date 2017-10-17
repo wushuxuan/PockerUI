@@ -5,18 +5,22 @@
 
   <view class="free-panel-title">查看更多动画</view>
   <view class="free-panel">
-    <view class="free-card-alls">
+    <view class="free-card-alls" wx:for="{{list}}" wx:key="{{list}}">
       <view class="free-card-all">
             <view class="free-card-image">
               <image mode="widthFix" src="https://p.ssl.qhimg.com/t01c450bb0313902828.png"></image>
             </view>
             <view class="free-card-texts">
               <view class="free-card-text free-card-title free-capsule">
-                <text class="free-capsules">
-                <text class="free-capsule-text">大众朗逸</text>
-                <text class="free-capsule-badge1">营运</text>
-                <text class="free-capsule-badge2">新车</text>
-                </text>
+                <view class="free-capsules" style="width:100%;display: flex;">
+                  <view class="free-capsule-text">{{item.name}}</view>
+                  <view class="free-capsule-badges">
+                    <view class="free-capsule-badge">满减</view>
+                  </view>
+                  <view class="free-capsule-badges">
+                    <view class="free-capsule-badge" style="border:1px solid #48c23d;color:#48c23d;">新车                       </view>
+                  </view>
+                </view>
               </view>
               <view class="free-card-text free-card-detail">
                   <view>三厢 | 1.6自动 | 乘坐5人</view>
@@ -31,7 +35,7 @@
               </view>
             </view>
       </view>
-      <view class="free-card-SearchMore {{slide?'slideDown':'slideup'}}" animation="{{animationData}}">
+      <view data-id="{{index}}" class="free-card-SearchMore {{index==id?'slideDown':'slideup'}}">
         <view class="fontSize30">1.网站预订：登录www.zuche.com</view>
         <view class="fontSize30">2. 电话预订：致电神州租车24小时客户服务中心400 616 6666</view>
         <view class="fontSize30">3. 门店预订：光临神州租车门店</view>

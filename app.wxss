@@ -1,9 +1,5 @@
 /**app.wxss**/
 @import "wxss/index.wxss";
-
-
-
-
 .container {
   height: 100%;
   display: flex;
@@ -11,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  overflow-x:hidden 
+  overflow-x:hidden; 
 } 
 .free-panel{
   width:100%;

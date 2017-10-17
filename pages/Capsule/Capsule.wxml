@@ -4,13 +4,18 @@
   <template is="free-doc-title" data="{{doc_title:'Capsule 胶囊'}}"/>
 
   <view class="free-panel-title">左上角</view>
-  <view class="free-panel">
+  <view class="fontSize30" style="margin-bottom:50rpx;color:#707070;">只需要引用 view class="free-capsules" 里的内容</view>
+  <view class="free-panel" style="padding-left:10%;">
   <view class="free-capsule">
-    <text class="free-capsules">
-    <text class="free-capsule-text">桂花龙井</text>
-    <text class="free-capsule-badge1">满减</text>
-    <text class="free-capsule-badge2">新品</text>
-    </text>
+    <view class="free-capsules" style="display: flex;">
+      <view class="free-capsule-text">桂花龙井</view>
+      <view class="free-capsule-badges">
+        <view class="free-capsule-badge">满减</view>
+      </view>
+      <view class="free-capsule-badges">
+        <view class="free-capsule-badge" style="border:1px solid #48c23d;color:#48c23d;">新品</view>
+      </view>
+    </view>
   </view>
 
   </view>
