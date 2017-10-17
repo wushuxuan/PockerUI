@@ -23,9 +23,9 @@
     <view class="free-step-navs">
       <view class="free-step-nav">
         <text  style="{{index==0?'color:#48c23d;':''}}" class="iconfont icon-stepsIcon"></text>
-        <text class="iconfont">——</text>
+        <text class="iconfont icon-straightLine"></text>
         <text style="{{index==1?'color:#48c23d;':''}}" class="iconfont icon-stepsIcon"></text>
-        <text class="iconfont">——</text>
+        <text class="iconfont icon-straightLine"></text>
         <text  style="{{index==2?'color:#48c23d;':''}}" class="iconfont icon-stepsIcon"></text>
       </view>
       <view class="buttons">

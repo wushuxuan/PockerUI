@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 439570 */
-  src: url('//at.alicdn.com/t/font_439570_ezs9o5l0amaq0k9.eot');
-  src: url('//at.alicdn.com/t/font_439570_ezs9o5l0amaq0k9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_439570_ezs9o5l0amaq0k9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_439570_ezs9o5l0amaq0k9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_439570_ezs9o5l0amaq0k9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_439570_vtwnm8qnd4qb0529.eot');
+  src: url('//at.alicdn.com/t/font_439570_vtwnm8qnd4qb0529.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_439570_vtwnm8qnd4qb0529.woff') format('woff'),
+  url('//at.alicdn.com/t/font_439570_vtwnm8qnd4qb0529.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_439570_vtwnm8qnd4qb0529.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -25,7 +25,7 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-straightLine:before { content: "\e60b"; }/*直线*/
+.icon-straightLine:before { content: "\e603"; }/*直线*/
 .icon-VerticalLine:before { content: "\e601"; }/*竖线*/
 .icon-stepsIcon:before { content: "\e638"; }/*步骤未进行图标*/
 .icon-all:before { content: "\e696"; }
