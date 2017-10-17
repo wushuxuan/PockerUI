@@ -14,7 +14,7 @@
 }
 .free-card-alls{
   width:95%;
-  margin:0 auto;
+  margin:5% auto;
 }
 .free-card-all{
   display: flex;

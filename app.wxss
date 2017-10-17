@@ -33,25 +33,23 @@ page{
 .TopText{
   padding:15px 0px;
 }
-/*内容*/
-.indexContent{
-  margin:5px 0px;
-  background:#fff;
-  padding-left:10px;
+/*公共内容*/
+.doc-title{
+  width:90%;
+  margin:20px auto 100rpx;
+  padding:10px 0px;
+  border-bottom: 1px solid #ddd;
+  font-size: 60rpx;
+  color:#707070;
 }
-.flex-wrap{
-  padding:15px 0px;
-  border-bottom:1px solid #eee;
+.free-panel{
+  margin-bottom:50rpx;
 }
-
-.RightArrow{
-  width:50rpx;
-  height:50rpx;
-}
-
-.flex-wrap>view{
-  width: 50%;
-  display: inline-block;
+.free-panel-title{
+  width:90%;
+  margin:10px 5%;
+  color:#707070;
+  font-size:35rpx;
 }
 /*字体*/
 .fontWeight{

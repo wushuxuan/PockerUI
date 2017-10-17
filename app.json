@@ -1,11 +1,12 @@
 {
   "pages":[
-      "pages/SearchMore/SearchMore",
+  
   "pages/index/index",
   "pages/Picker/Picker",
   "pages/Card/Card",
   "pages/Button/Button",
   "pages/Cell/Cell",
+  "pages/SearchMore/SearchMore",
   "pages/Badege/Badege",
   "pages/Capsule/Capsule",
   "pages/Image/Image"

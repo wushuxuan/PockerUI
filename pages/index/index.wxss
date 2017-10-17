@@ -3,37 +3,26 @@
 page{
   background: #f2f3f5;
 }
-view{
-  width:100%;
-}
-.indexTop{
-  padding:30px 0px 20px;
-  background:#fff;
-}
-.TopImg{
-  text-align: center;
-}
-.TopImg image{
-  width:300rpx;
-  height:300rpx;
-}
-.TopText{
-  padding:15px 0px;
-}
 /*内容*/
 .indexContent{
+  width:100%;
   margin:5px 0px;
-  background:#fff;
-  padding-left:10px;
 }
 .flex-wrap{
+  width:85%;
+  background:#fff;
+  margin:0% auto 2%;
+  padding:15px 5%;
   border-bottom:1px solid #eee;
 }
-.flex-wrap view{
+.flex-wrap>view{
   display: inline-block;
-  width:49%;
+}
+.text-left{
+  width:80%;
 }
 .text-right{
+  width:20%;
   font-weight: 900;
 }
 

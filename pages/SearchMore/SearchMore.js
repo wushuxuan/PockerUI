@@ -19,12 +19,12 @@ Page({
        if (this.data.icon == 'icon-more'){
          that.setData({
            icon: 'icon-moreunfold',
-           show:1
+           slide:1
          })
        }else{
          that.setData({
            icon: 'icon-more',
-           show: 0
+           slide: 0
          })
        }
   },
