@@ -2,7 +2,6 @@
 .free-navs-common{
   width:90%;
   margin:0 auto;
-  border:1px solid red;
   display: flex;
 }
 .free-common-nav{
@@ -21,7 +20,7 @@
   border-bottom:3px solid #eee;
 }
 
-/*步骤分栏导航*/
+/*水平步骤分栏导航*/
 .free-step-navs{
   width:90%;
   margin:0 auto;
@@ -35,6 +34,20 @@
   display: inline-block;
   margin:0px 10rpx;
 }
+/*垂直步骤分栏导航*/
+.free-verticalStep-navs{
+  display: flex;
+  flex-flow: row;
+}
+.free-verticalStep-nav{
+  width:35px;
+  margin-left:50rpx;
+  display: flex;
+  flex-flow: column;
+}
+.free-verticalStep-nav>view{
+  margin:10rpx 0;
+}
 /*步骤按钮*/
 .buttons{
   text-align: center;
@@ -43,3 +56,4 @@
   display: inline-block;
   margin:100rpx 5rpx;
 }
+

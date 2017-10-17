@@ -18,7 +18,7 @@
 
 
 
-  <view class="free-panel-title">步骤分栏导航</view>
+  <view class="free-panel-title">水平步骤分栏导航</view>
   <view class="free-panel">
     <view class="free-step-navs">
       <view class="free-step-nav">
@@ -33,7 +33,23 @@
         <button bindtap="nextStep" size="mini" type="primary">下一步</button>
       </view>
     </view>
+  </view>
 
 
+  <view class="free-panel-title">垂直步骤分栏导航</view>
+  <view class="free-panel">
+    <view class="free-verticalStep-navs">
+      <view class="free-verticalStep-nav">
+        <view  style="{{Step==0?'color:#48c23d;':''}}" class="iconfont icon-stepsIcon"></view>
+        <view class="iconfont icon-VerticalLine"></view>
+        <view style="{{Step==1?'color:#48c23d;':''}}" class="iconfont icon-stepsIcon"></view>
+        <view class="iconfont icon-VerticalLine"></view>
+        <view  style="{{Step==2?'color:#48c23d;':''}}" class="iconfont icon-stepsIcon"></view>
+      </view>
+      <view class="buttons">
+        <button bindtap="vertical_previousStep" size="mini" type="primary">上一步</button>
+        <button bindtap="vertical_nextStep" size="mini" type="primary">下一步</button>
+      </view>
+    </view>
   </view>
 </view>

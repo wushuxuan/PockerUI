@@ -8,7 +8,8 @@ Page({
     common_navs_list:['全部订单','待支付','未收货','待收货','已完成'],
     common_title: ['这是全部订单', '这是待支付订单', '这是未收货订单', '这是待收货订单', '这是已完成订单'],
     id:0,
-    index:0
+    index:0,
+    Step:0
   },
   /*上一步*/
   previousStep:function(e){
@@ -24,6 +25,7 @@ Page({
       })
     }
   },
+    /*下一步*/
   nextStep:function(e){
     var index = this.data.index + 1
     if (index > 2){
@@ -37,7 +39,36 @@ Page({
       })
     }
   },
-  /*下一步*/
+
+  /*竖直上一步*/
+  vertical_previousStep: function (e) {
+    var Step = this.data.Step - 1
+    if (Step < 0) {
+      wx.showToast({
+        title: '已经是第一步了',
+      })
+    } else {
+      var that = this
+      that.setData({
+        Step: Step
+      })
+    }
+  },
+  /*竖直下一步*/
+  vertical_nextStep: function (e) {
+    var Step = this.data.Step + 1
+    if (Step > 2) {
+      wx.showToast({
+        title: '已经是最后一步了',
+      })
+    } else {
+      var that = this
+      that.setData({
+        Step: Step
+      })
+    }
+  },
+
   NavClick:function(e){
     var id = e.currentTarget.dataset.id
     var that = this
