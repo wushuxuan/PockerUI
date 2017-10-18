@@ -49,11 +49,11 @@
 
 
 
-   <view class="free-panel-title">图片印章</view>
+   <view class="free-panel-title">icon印章</view>
    <view class="free-panel">
     <view class="free-bdg-img">
-    <view class="iconfont icon-cart" style="font-size:80rpx;">
-      <view class="free-seal">9</view>
+    <view class="iconfont icon-cart" style="font-size:70rpx;">
+      <view class="free-icon-seal">9</view>
     </view>
     </view>  
    </view>

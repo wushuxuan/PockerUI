@@ -45,7 +45,7 @@
         </view>
       </view>
 
-    <button form-type='submit' type="primary">提交表单</button>
+    <button form-type='submit' type="primary" style="width:90%;margin:0 auto;">提交表单</button>
     </form>
   </view>
 </view>

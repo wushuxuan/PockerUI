@@ -21,7 +21,7 @@ Page({
         url: '../Form/Form'
       },{
       name: 'Progress 进度条',
-      url: '../Progress/Progress'
+      url: '../progress/progress'
     },{
         name: 'Card 卡片',
         url: '../Card/Card'
