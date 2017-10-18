@@ -10,7 +10,7 @@
   <view class="indexContent">
     <navigator wx:for="{{indexList}}" wx:key="{{indexList}}" class="flex-wrap fontSize35" url="{{item.url}}">
         <view class="text-left">{{item.name}}</view>
-        <view class="text-right">〉</view>
+        <view class="free-icon-right"></view>
     </navigator>
   </view>
 

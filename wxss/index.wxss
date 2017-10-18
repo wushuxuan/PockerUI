@@ -19,6 +19,22 @@
   margin-bottom:50rpx;
   color:#707070;
 }
+/*左箭头*/
+.flex-wrap{
+  position: relative;
+}
+.free-icon-right{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-width: 2px 2px 0 0;
+  border-color: #707070;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
 
 @font-face {
   font-family: 'iconfont';  /* project id 439570 */
