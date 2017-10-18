@@ -1,7 +1,7 @@
 {
   "pages":[
-    
   "pages/index/index",
+  "pages/Map/Map",
   "pages/Card/Card",
   "pages/Cell/Cell",
   "pages/Form/Form",

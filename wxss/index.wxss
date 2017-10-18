@@ -1,4 +1,5 @@
 /**index.wxss**/
+@import "Map/Map.wxss";
 @import "Card/Card.wxss";
 @import "Cell/Cell.wxss";
 @import "Form/Form.wxss";
