@@ -1,10 +1,10 @@
 <!--pages/Capsule/Capsule.wxml-->
-<import src="../Template/Template.wxml"/>
+<import src="../../wxss/Template/Template.wxml"/>
 <view class="container">
   <template is="free-doc-title" data="{{doc_title:'Capsule 胶囊'}}"/>
 
   <view class="free-panel-title">左上角</view>
-  <view class="fontSize30" style="margin-bottom:50rpx;color:#707070;">只需要引用 view class="free-capsules" 里的内容</view>
+  <view class="free-note">只需要引用 view class="free-capsules" 里的内容</view>
   <view class="free-panel" style="padding-left:10%;">
   <view class="free-capsule">
     <view class="free-capsules" style="display: flex;">

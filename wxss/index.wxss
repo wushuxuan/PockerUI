@@ -1,14 +1,22 @@
 /**index.wxss**/
+@import "Card/Card.wxss";
+@import "Cell/Cell.wxss";
+@import "Image/Image.wxss";
 @import "Button/Button.wxss";
 @import "Badege/Badege.wxss";
 @import "Picker/Picker.wxss";
 @import "Capsule/Capsule.wxss";
-@import "Image/Image.wxss";
-@import "Card/Card.wxss";
-@import "Cell/Cell.wxss";
+@import "progress/progress.wxss";
+@import "Template/Template.wxss";
 @import "SearchMore/SearchMore.wxss";
 @import "navigation/navigation.wxss";
 
+/*全局注释样式*/
+.free-note{
+  font-size:30rpx;
+  margin-bottom:50rpx;
+  color:#707070;
+}
 
 @font-face {
   font-family: 'iconfont';  /* project id 439570 */

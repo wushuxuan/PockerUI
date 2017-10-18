@@ -1,5 +1,5 @@
 <!--pages/Dialog/Dialog.wxml-->
-<import src="../Template/Template.wxml"/>
+<import src="../../wxss/Template/Template.wxml"/>
 <view class="container">
   <template is="free-doc-title" data="{{doc_title:'Picker 自定义选择器'}}"/>
 

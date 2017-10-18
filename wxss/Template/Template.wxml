@@ -1,0 +1,27 @@
+<!--pages/Cell/Cell.wxml-->
+<view class="container">
+<view class="doc-title">各种模板</view>
+
+<view class="free-panel-title">固定页面标题</view>
+<view class="free-panel">
+  <view class="free-Template">
+    <template name="free-doc-title">
+      <view class="doc-title">{{doc_title}}</view>
+    </template>
+  </view>
+</view>
+
+
+<view class="free-panel-title">自定义组件表格</view>
+<view class="free-panel">
+  <view class="free-Template">
+    <template name="table">
+      <view class="free-table">
+        <view wx:for="{{table_list}}" wx:key="{{item}}" class="free-tr"><view class="free-td">{{item.name}}</view><view class="free-td">{{item.value}}</view></view>
+       </view>
+    </template>
+  </view>
+</view>
+
+
+</view>

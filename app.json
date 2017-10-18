@@ -1,5 +1,6 @@
 {
   "pages":[
+  "pages/progress/progress",
   "pages/index/index",
   "pages/Picker/Picker",
   "pages/Card/Card",

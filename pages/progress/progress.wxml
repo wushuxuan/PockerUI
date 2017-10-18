@@ -1,0 +1,16 @@
+<!--pages/progress/progress.wxml-->
+<import src="../../wxss/Template/Template.wxml"/>
+<view class="container">
+<template is="free-doc-title" data="{{doc_title:'Progress 进度条'}}"/>
+
+<view class="free-panel-title">普通进度条</view>
+<template is="table" data="{{table_list:[{ name: 'percent', value:'百分比0~100'},{name: 'show-info', value: '在进度条右侧显示百分比'},{ name: 'stroke-width', value:'进度条线的宽度，单位px'},{ name: 'active', value:'进度条是否有从左往右的动画'}]}}"/>
+
+
+<view class="free-panel">
+    <view class="free-progress">
+      <progress class="free-common-progress" percent="60" show-info="true" stroke-width="30" activeColor="red" active></progress>
+    </view>
+
+</view>
+</view>

@@ -1,5 +1,5 @@
 <!--pages/Card/Card.wxml-->
-<import src="../Template/Template.wxml"/>
+<import src="../../wxss/Template/Template.wxml"/>
 <view class="container">  
   <template is="free-doc-title" data="{{doc_title:'Card 卡片组'}}"/>
 

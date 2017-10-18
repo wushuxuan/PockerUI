@@ -1,5 +1,5 @@
 <!--pages/navigation/navigation.wxml-->
-<import src="../Template/Template.wxml"/>
+<import src="../../wxss/Template/Template.wxml"/>
 <view class="container">
   <template is="free-doc-title" data="{{doc_title:'navigation 分栏导航'}}"/>
 

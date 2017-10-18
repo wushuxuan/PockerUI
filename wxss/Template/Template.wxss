@@ -1,0 +1,25 @@
+/* pages/Template/Template.wxss */
+/**/
+.free-table{
+display: inline-block;
+width:90%;
+font-size:30rpx;
+color:#707070;
+margin:0px auto 20px;
+border-bottom:1px solid #ddd;
+
+}
+.free-tr{
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  border:1px solid #ddd;
+  border-bottom:none;
+  border-right: none;
+}
+.free-td{
+  width:49.8%;
+  padding:10px 0px;
+  border-right:1px solid #ddd;
+  text-align: center;
+}
