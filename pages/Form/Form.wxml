@@ -14,7 +14,7 @@
       </view>
       <view class="free-input">
         <label>手机号</label>
-        <input class="free-input" type="text" name="password" placeholder="请输入您的手机号"></input>
+        <input class="free-input" type="text" name="telnumber" placeholder="请输入您的手机号"  bindblur="AjaxTel" minlength='11'></input>
       </view>
       <view class="free-input">
         <label>选择省份</label>
@@ -35,7 +35,7 @@
 
       <view class="free-inputs">
         <view class="free-input">
-          <radio-group class="free-radio-group" bindchange="radioChange">
+          <radio-group class="free-radio-group">
             <label class="free-radio" wx:for="{{items}}" wx:key="{{items}}">
               <radio value="{{item.name}}"/>
               <view class="free-radio-value">{{item.value}}</view>
