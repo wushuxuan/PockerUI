@@ -23,9 +23,6 @@
   width:30%;
   border:none;
 }
-picker{
-  padding:30rpx 0;
-}
 
 .free-input .free-input-yanzheng{
   width:40%;
@@ -60,4 +57,9 @@ picker{
 }
 .free-radio-value{
   width:90%;
+}
+#free-radio{
+  width:10%;
+  padding:0;
+  margin:0;
 }

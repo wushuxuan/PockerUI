@@ -19,7 +19,7 @@
       <view class="free-input">
         <label>选择省份</label>
         <picker mode="region" bindchange="Free_form_picker" value="{{region}}" custom-item="{{customItem}}">
-          <text class="picker_value">{{region[1]}}</text>
+          <input disabled='disabled' class="picker_value" name="area" value="{{region[1]}}"></input>
         </picker>
       </view>
     </view>
@@ -36,16 +36,16 @@
       <view class="free-inputs">
         <view class="free-input">
           <radio-group class="free-radio-group" bindchange="radioChange">
-            <label class="free-radio" wx:for="{{items}}" wx:key="{{items}}" bindtap="radioChange">
-              <radio value="{{item.name}}" checked="{{item.checked}}"/>
+            <label class="free-radio" wx:for="{{items}}" wx:key="{{items}}">
+              <radio value="{{item.name}}"/>
               <view class="free-radio-value">{{item.value}}</view>
-              <view  data-id="{{index}}" style="{{index==id?'color:#48c23d;':''}}" bindtap="idChange" class="iconfont icon-stepsIcon"></view>
+              <input id="free-radio" data-id="{{index}}" disabled='disabled' style="{{index==id?'color:#48c23d;':''}}" bindtap="idChange" class="free-radio iconfont icon-stepsIcon"></input>
             </label>
           </radio-group>
         </view>
       </view>
 
-
+    <button form-type='submit' type="primary">提交表单</button>
     </form>
   </view>
 </view>

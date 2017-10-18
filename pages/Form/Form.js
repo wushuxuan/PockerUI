@@ -16,9 +16,10 @@ Page({
       that.setData({
         region: e.detail.value
       })
+      console.log(e.detail.value[1])
   },
   radioChange:function(e){
-  
+    console.log(e)
   },
   idChange:function(e){
     console.log(e.currentTarget.dataset.id)
@@ -27,6 +28,9 @@ Page({
     that.setData({
       id: id
     })
+  },
+  Submit:function(e){
+    console.log(e.detail.value)
   },
   /**
    * 生命周期函数--监听页面加载
