@@ -1,0 +1,63 @@
+/* pages/Form/Form.wxss */
+.free-inputs{
+  background:#fff;
+  padding-left:5%;
+  margin-bottom:100rpx;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+.free-input{
+  border-bottom:1px solid #eee;
+  display: flex;
+  flex-flow: row;
+}
+.free-input:last-child{
+  border:none;
+}
+.free-input>label,
+.free-input input{
+  padding:30rpx 0;
+  border:none;
+}
+.free-input label{
+  width:30%;
+  border:none;
+}
+picker{
+  padding:30rpx 0;
+}
+
+.free-input .free-input-yanzheng{
+  width:40%;
+}
+.free-input-button{
+  width:30%;
+  text-align: center;
+  background:#48c23d;
+  color:#fff;
+  font-size:30rpx;
+  padding:35rpx 0 !important;
+}
+.free-input-button-size{
+  width:25%;
+  height:50%;
+  text-align: center;
+  background:#48c23d;
+  color:#fff;
+  font-size:30rpx;
+  padding:30rpx 0 !important;
+}
+
+/*单选*/
+.free-radio-group{
+  width:100%;
+}
+.free-radio-group>label{
+  width:100%;
+  display: flex;
+  flex-flow:row; 
+  border-bottom:1px solid #ddd;
+}
+.free-radio-value{
+  width:90%;
+}

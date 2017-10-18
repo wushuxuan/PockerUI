@@ -1,16 +1,18 @@
 {
   "pages":[
-  "pages/progress/progress",
+    "pages/Form/Form",
   "pages/index/index",
-  "pages/Picker/Picker",
   "pages/Card/Card",
-  "pages/Button/Button",
   "pages/Cell/Cell",
-  "pages/navigation/navigation",
-  "pages/Capsule/Capsule",
-  "pages/SearchMore/SearchMore",
+  
+  "pages/Image/Image",
+  "pages/Picker/Picker",
   "pages/Badege/Badege",
-  "pages/Image/Image"
+  "pages/Button/Button",
+  "pages/Capsule/Capsule",
+  "pages/progress/progress",
+  "pages/navigation/navigation",
+  "pages/SearchMore/SearchMore"
   ],
   "window":{
     "backgroundTextStyle":"light",

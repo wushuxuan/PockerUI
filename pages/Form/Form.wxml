@@ -1,0 +1,52 @@
+<!--pages/Form/Form.wxml-->
+<import src="../../wxss/Template/Template.wxml"/>
+<view class="container">
+<template is="free-doc-title" data="{{doc_title:'Form 表单'}}"/>
+
+<view class="free-panel-title">基础表单验证</view>
+<view class="free-panel">
+  <view class="free-forms">
+    <form bindsubmit="Submit" bindreset="Reset">
+    <view class="free-inputs">
+      <view class="free-input">
+        <label>姓名</label>
+        <input class="free-input" type="text" name="username" placeholder="请输入您的姓名"></input>
+      </view>
+      <view class="free-input">
+        <label>手机号</label>
+        <input class="free-input" type="text" name="password" placeholder="请输入您的手机号"></input>
+      </view>
+      <view class="free-input">
+        <label>选择省份</label>
+        <picker mode="region" bindchange="Free_form_picker" value="{{region}}" custom-item="{{customItem}}">
+          <text class="picker_value">{{region[1]}}</text>
+        </picker>
+      </view>
+    </view>
+
+      <view class="free-inputs">
+        <view class="free-input">
+          <label>验证码</label>
+          <input class="free-input-yanzheng" type="text" name="validation" placeholder="验证码"></input>
+          <view class="free-input-button" >获取验证码</view>
+        </view>
+      </view>
+
+
+      <view class="free-inputs">
+        <view class="free-input">
+          <radio-group class="free-radio-group" bindchange="radioChange">
+            <label class="free-radio" wx:for="{{items}}" wx:key="{{items}}" bindtap="radioChange">
+              <radio value="{{item.name}}" checked="{{item.checked}}"/>
+              <view class="free-radio-value">{{item.value}}</view>
+              <view  data-id="{{index}}" style="{{index==id?'color:#48c23d;':''}}" bindtap="idChange" class="iconfont icon-stepsIcon"></view>
+            </label>
+          </radio-group>
+        </view>
+      </view>
+
+
+    </form>
+  </view>
+</view>
+</view>

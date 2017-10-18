@@ -15,7 +15,11 @@ Page({
       },{
         name: 'Capsule 胶囊',
         url: '../Capsule/Capsule'
-    }, {
+    },
+      {
+        name: 'Form 表单',
+        url: '../Form/Form'
+      },{
       name: 'Progress 进度条',
       url: '../Progress/Progress'
     },{
