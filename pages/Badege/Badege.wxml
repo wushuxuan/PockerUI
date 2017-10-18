@@ -52,9 +52,9 @@
    <view class="free-panel-title">图片印章</view>
    <view class="free-panel">
     <view class="free-bdg-img">
-    <image src="../../images/BuyCar.png">
+    <view class="iconfont icon-cart" style="font-size:80rpx;">
       <view class="free-seal">9</view>
-    </image>
+    </view>
     </view>  
    </view>
 </view>

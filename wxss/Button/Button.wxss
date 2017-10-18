@@ -6,6 +6,6 @@
 }
 
 .free-btn-mini{
-  margin:0px !important;
+  margin:0px 5px !important;
   padding:0px 15rpx !important;
 }

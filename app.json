@@ -1,10 +1,10 @@
 {
   "pages":[
-    "pages/Form/Form",
+    
   "pages/index/index",
   "pages/Card/Card",
   "pages/Cell/Cell",
-  
+  "pages/Form/Form",
   "pages/Image/Image",
   "pages/Picker/Picker",
   "pages/Badege/Badege",
