@@ -26,7 +26,10 @@ Page({
       },{
         name: 'Capsule 胶囊',
         url: '../Capsule/Capsule'
-      }, {
+      },{
+        name: 'Articles 长文章省略',
+        url: '../Articles/Articles'
+      },{
         name: 'Image 上传图片',
         url: '../Image/Image'
       },{

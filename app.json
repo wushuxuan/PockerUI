@@ -1,5 +1,6 @@
 {
   "pages":[
+      "pages/Articles/Articles",
   "pages/index/index",
   "pages/Map/Map",
   "pages/Card/Card",
@@ -10,6 +11,7 @@
   "pages/Badege/Badege",
   "pages/Button/Button",
   "pages/Capsule/Capsule",
+
   "pages/progress/progress",
   "pages/navigation/navigation",
   "pages/SearchMore/SearchMore"

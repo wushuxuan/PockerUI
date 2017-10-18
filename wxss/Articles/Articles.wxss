@@ -1,0 +1,13 @@
+/* pages/Articles/Articles.wxss */
+.free-text{
+  width:90%;
+  margin:0 auto;
+}
+.free-articles{
+  width:90%;
+  margin:0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}

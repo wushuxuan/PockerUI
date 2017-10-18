@@ -10,6 +10,7 @@
 @import "Capsule/Capsule.wxss";
 @import "progress/progress.wxss";
 @import "Template/Template.wxss";
+@import "Articles/Articles.wxss";
 @import "SearchMore/SearchMore.wxss";
 @import "navigation/navigation.wxss";
 

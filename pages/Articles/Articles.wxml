@@ -1,0 +1,19 @@
+<!--pages/Articles/Articles.wxml-->
+<import src="../../wxss/Template/Template.wxml"/>
+<view class="container">
+  <template is="free-doc-title" data="{{doc_title:'Articles 长文章省略'}}"/>
+
+  <view class="free-panel-title">省略之前：</view>
+  <view class="free-panel">
+    <view class="free-text">
+      <text class="fontSize35">PockerUI是我个人开发的开源小程序框架版本，结合了微信的视觉规范，为其他开发者提供统一的类库。</text>
+    </view>
+  </view>
+
+    <view class="free-panel-title">省略之后：</view>
+  <view class="free-panel">
+    <view class="free-articles">
+      <text class="fontSize35">PockerUI是我个人开发的开源小程序框架版本，结合了微信的视觉规范，为其他开发者提供统一的类库。</text>
+    </view>
+  </view>
+</view>
