@@ -3,6 +3,8 @@
 @import "Card/Card.wxss";
 @import "Cell/Cell.wxss";
 @import "Form/Form.wxss";
+@import "Music/Music.wxss";
+@import "Video/Video.wxss";
 @import "Image/Image.wxss";
 @import "Button/Button.wxss";
 @import "Badege/Badege.wxss";

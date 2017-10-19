@@ -17,6 +17,12 @@ Page({
       }, {
         name: 'Form 表单',
         url: '../Form/Form'
+      }, {
+        name: 'Video 视频',
+        url: '../Video/Video'
+      }, {
+        name: 'Music 音乐',
+        url: '../Music/Music'
       },{
       name:'Button 按钮',
       url:'../Button/Button'
