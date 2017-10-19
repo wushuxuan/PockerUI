@@ -3,10 +3,7 @@
   
   <view class="doc-title">
   FreeUI
-  <view class="fontSize30" style="margin-top:5%;"> 
-    <view style="margin-bottom:3%;">github地址：github.com/wushuxuan/PockerUI</view>
-    <view>定义组件库，项目中导入相对应的wxml代码，js和wxss即可</view>
-  </view>
+  <view class="fontSize30" style="margin-top:5%;"> 定义组件库，项目中导入相对应的wxml代码，js和wxss即可</view>
   </view>
 
 

@@ -2,7 +2,7 @@
   width:90%;
   margin:30rpx auto;
 }
-.free-Images image{
+.free-Images>image{
   width:25%;
 }
 .chooseImage{

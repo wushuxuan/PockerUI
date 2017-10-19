@@ -9,9 +9,7 @@
   box-sizing: border-box;
   overflow-x:hidden; 
 } 
-.free-panel{
-  width:100%;
-}
+
 page{
   background: #F9F9F9;
 }
@@ -39,6 +37,7 @@ page{
   color:#707070;
 }
 .free-panel{
+  width:100%;
   margin-bottom:50rpx;
 }
 .free-panel-title{
@@ -48,12 +47,13 @@ page{
   font-size:35rpx;
 }
 /*字体*/
-.h1{
+  .h1{
   font-size:40rpx;
   padding: 15rpx 0px;
   text-align: center;
   font-weight: bold;
 }
+
 .fontWeight{
   font-weight: bold;
 }
@@ -66,7 +66,7 @@ page{
 .text-right{
   font-weight: 900;
 }
-.text-center{
+.text_center{
   text-align: center;
 }
 .text-right{

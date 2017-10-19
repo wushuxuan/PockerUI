@@ -1,5 +1,6 @@
 {
   "pages":[
+      
   "pages/index/index",
   "pages/Map/Map",
   "pages/Card/Card",
@@ -12,11 +13,11 @@
   "pages/Badege/Badege",
   "pages/Button/Button",
   "pages/Capsule/Capsule",
-  "pages/ScrollView/ScrollView",
   "pages/Articles/Articles",
   "pages/progress/progress",
   "pages/navigation/navigation",
-  "pages/SearchMore/SearchMore"
+  "pages/SearchMore/SearchMore",
+  "pages/ScrollView/ScrollView"
   ],
   "window":{
     "backgroundTextStyle":"light",

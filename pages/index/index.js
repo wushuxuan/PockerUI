@@ -17,10 +17,10 @@ Page({
       }, {
         name: 'Form 表单',
         url: '../Form/Form'
-      }, {
+      },{
         name: 'Video 视频',
         url: '../Video/Video'
-      }, {
+      },{
         name: 'Music 音乐',
         url: '../Music/Music'
       },{
@@ -39,23 +39,22 @@ Page({
       name: 'Progress 进度条',
       url: '../progress/progress'
       },{
-        name: 'Articles 长文章省略',
-        url: '../Articles/Articles'
-      },{
         name: 'Picker 自定义选择器',
         url: '../Picker/Picker'
-      },
-      {
+      },{
         name: 'SearchMore 查看更多',
         url: '../SearchMore/SearchMore'
+      }, {
+        name: 'Articles 长文章省略',
+        url: '../Articles/Articles'
       },
       {
         name: 'navigation 分栏导航',
         url: '../navigation/navigation'
-      },{
+      }, {
         name: 'Scroll-view 可滚动view视图容器',
         url: '../ScrollView/ScrollView'
-      },
+      }
     ]
   },
 
