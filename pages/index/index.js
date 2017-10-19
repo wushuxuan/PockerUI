@@ -27,14 +27,14 @@ Page({
         name: 'Capsule 胶囊',
         url: '../Capsule/Capsule'
       },{
-        name: 'Articles 长文章省略',
-        url: '../Articles/Articles'
-      },{
         name: 'Image 上传图片',
         url: '../Image/Image'
       },{
       name: 'Progress 进度条',
       url: '../progress/progress'
+      },{
+        name: 'Articles 长文章省略',
+        url: '../Articles/Articles'
       },{
         name: 'Picker 自定义选择器',
         url: '../Picker/Picker'
