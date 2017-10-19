@@ -1,0 +1,12 @@
+/* pages/ScrollView/ScrollView.wxss */
+.free-horizontalScroll{
+  white-space: nowrap;
+}
+.free-horizontalScroll-item{
+  width:100%;
+  display: inline-block;
+  white-space: pre-wrap;
+}
+.free-verticalScroll-item{
+  height:100%;
+}

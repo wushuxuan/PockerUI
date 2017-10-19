@@ -48,6 +48,12 @@ page{
   font-size:35rpx;
 }
 /*字体*/
+.h1{
+  font-size:40rpx;
+  padding: 15rpx 0px;
+  text-align: center;
+  font-weight: bold;
+}
 .fontWeight{
   font-weight: bold;
 }
@@ -60,7 +66,7 @@ page{
 .text-right{
   font-weight: 900;
 }
-.text_center{
+.text-center{
   text-align: center;
 }
 .text-right{

@@ -8,6 +8,7 @@
 @import "Badege/Badege.wxss";
 @import "Picker/Picker.wxss";
 @import "Capsule/Capsule.wxss";
+@import "ScrollView/ScrollView";
 @import "progress/progress.wxss";
 @import "Template/Template.wxss";
 @import "Articles/Articles.wxss";

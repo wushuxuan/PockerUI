@@ -46,6 +46,9 @@ Page({
       {
         name: 'navigation 分栏导航',
         url: '../navigation/navigation'
+      },{
+        name: 'Scroll-view 可滚动view视图容器',
+        url: '../ScrollView/ScrollView'
       },
     ]
   },

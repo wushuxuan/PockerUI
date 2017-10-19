@@ -1,6 +1,6 @@
 {
   "pages":[
-      
+  "pages/ScrollView/ScrollView",
   "pages/index/index",
   "pages/Map/Map",
   "pages/Card/Card",
