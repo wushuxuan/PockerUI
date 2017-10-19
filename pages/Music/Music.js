@@ -1,9 +1,5 @@
 // pages/Music/Music.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     MusicList:[{
       url: 'https://raw.githubusercontent.com/wushuxuan/PockerUI/master/Music/Music.mp3',
@@ -20,7 +16,6 @@ Page({
       progress: progress
     })
     console.log(progress+'%')
-
   },
   MusicEnd:function(){
     wx.showModal({

@@ -1,2 +1,10 @@
 <!--pages/Video/Video.wxml-->
-<text>pages/Video/Video.wxml</text>
+<import src="../../wxss/Template/Template.wxml"/>
+<view class="container">
+<template is="free-doc-title" data="{{doc_title:'Video 视频'}}"/>
+
+<view class="free-panel-title">正在开发中...</view>
+<view class="free-panel">
+  
+</view>
+</view>

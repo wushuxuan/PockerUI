@@ -1,12 +1,12 @@
 {
-  "pages":["pages/Music/Music",
+  "pages":[
   "pages/index/index",
   "pages/Map/Map",
   "pages/Card/Card",
   "pages/Cell/Cell",
   "pages/Form/Form",
   "pages/Video/Video",
-  
+  "pages/Music/Music",
   "pages/Image/Image",
   "pages/Picker/Picker",
   "pages/Badege/Badege",
