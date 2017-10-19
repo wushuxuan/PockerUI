@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    imageList:[]
   },
   onLoad: function (options) {
       var that = this
@@ -15,18 +15,22 @@ Page({
   },
   ChooseImage: function () {
     var that = this
+    var Count=9
     wx.chooseImage({
-      count: '9',
+      count: Count,
       success: function (res) {
-        var tempFilePaths = res.tempFilePaths
-        wx.saveFile({
-          tempFilePath: tempFilePaths[0],
-          success: function (res) {
-            that.setData({
-              savedFilePath: res.savedFilePath
-            })
-          }
+        console.log(res.tempFilePaths)
+        that.setData({
+          imageList: res.tempFilePaths
         })
+        console.log(res.tempFilePaths.length)
+        if(res.tempFilePaths.length < Count){
+          wx:wx.showModal({
+            title: '提示',
+            content: '您可以选择' + Count + '张图片',
+          })
+          wx.setStorageSync("imageList", res.tempFilePaths);
+        }
       }
     })
   },

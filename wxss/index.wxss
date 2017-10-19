@@ -40,11 +40,11 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 439570 */
-  src: url('//at.alicdn.com/t/font_439570_nqon8j832ua0pb9.eot');
-  src: url('//at.alicdn.com/t/font_439570_nqon8j832ua0pb9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_439570_nqon8j832ua0pb9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_439570_nqon8j832ua0pb9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_439570_nqon8j832ua0pb9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_439570_14972di4kzhyqfr.eot');
+  src: url('//at.alicdn.com/t/font_439570_14972di4kzhyqfr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_439570_14972di4kzhyqfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_439570_14972di4kzhyqfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_439570_14972di4kzhyqfr.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -56,6 +56,7 @@
 .icon-straightLine:before { content: "\e71c"; }/*直线*/
 .icon-VerticalLine:before { content: "\e60b"; }/*竖线*/
 .icon-stepsIcon:before { content: "\e638"; }/*步骤未进行图标*/
+.icon-addImage:before {content:"\e63a";}/*添加图片的icon*/
 .icon-all:before { content: "\e696"; }
 .icon-back:before { content: "\e697"; }
 .icon-cart:before { content: "\e698"; }

@@ -5,8 +5,9 @@
   <view class="free-panel-title">上传照片</view>
   <view class="free-panel">
     <view class="free-Images">
-      <image bindtap="ChooseImage" class="free-chooseImage" mode="widthFix" wx:if="{{savedFilePath}}" src="{{savedFilePath}}"></image>
-      <button bindtap="ChooseImage" size="mini" type="primary">上传照片</button>
+      <image class="free-chooseImage" mode="widthFix"  wx:for="{{imageList}}" wx:key="{{item}}" src="{{item}}"></image>
+      <image class="free-chooseImage" mode="widthFix" src="../../images/addImages.png" bindtap="ChooseImage"/>
+      <button bindtap="ChooseImage" class="chooseImage" type="primary">选择照片</button>
     </view>
   </view>
 </view>

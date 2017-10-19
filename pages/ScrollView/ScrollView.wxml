@@ -4,7 +4,7 @@
 <template is="free-doc-title" data="{{doc_title:'Scroll-view 自定义可滚动的视图容器'}}"/>
 
 <view class="free-panel-title">horizontal scroll</view>
-<view class="free-panel">
+<view class="free-panel" style="margin-bottom:150rpx;">
   <view class="free-horizontalScrolls">
     <scroll-view class="free-horizontalScroll" scroll-x="true" scroll-width-animation  bindscrolltoupper="Scrolltoupper" bindscrolltolower="Scrolltolower"  bindscroll="scrolltolower" style="width:100%;">
       <view id="free_horizontalScroll_item1" class="free-horizontalScroll-item">
@@ -22,7 +22,6 @@
     </scroll-view>
   </view>
 </view>
-
 
 
 

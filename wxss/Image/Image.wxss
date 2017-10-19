@@ -1,10 +1,11 @@
 .free-Images{
-  text-align: center;
-}
-.free-Images image,button{
-  display: block;
+  width:90%;
+  margin:30rpx auto;
 }
 .free-Images image{
-  width:50%;
-  margin:0 auto;
+  width:25%;
+}
+.chooseImage{
+  width:90%;
+  margin:30rpx auto;
 }
