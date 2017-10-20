@@ -5,6 +5,7 @@
 @import "Form/Form.wxss";
 @import "Image/Image.wxss";
 @import "Music/Music.wxss";
+@import "Video/Video.wxss";
 @import "Button/Button.wxss";
 @import "Badege/Badege.wxss";
 @import "Picker/Picker.wxss";

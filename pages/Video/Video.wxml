@@ -3,8 +3,11 @@
 <view class="container">
 <template is="free-doc-title" data="{{doc_title:'Video 视频'}}"/>
 
-<view class="free-panel-title">正在开发中...</view>
+<view class="free-panel-title">普通Video视频组件</view>
 <view class="free-panel">
-  
+  <view class="free-video-common">
+    <video id="myVideo" wx:for="{{VideoList}}" wx:key="{{item.src}}" controls="true" poster="{{item.images}}" style="width:100%;"  src="{{item.src}}" poster objectFit="fill" enable-danmu="{{hidden}}" danmu-btn="true"></video>
+    <form style="display:{{hidden?'block':'none'}}" class="free-danmu" bindsubmit="VideoDanmuSubmit"><input class="free-danmu-input" type="text" placeholder="弹幕内容" name="VideoDanmu"></input><button class="free-danmu-btn" form-type="submit" bindtap='bindSendDanmu'>发送弹幕</button></form>
+  </view>
 </view>
 </view>

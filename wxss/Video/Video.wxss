@@ -1,1 +1,27 @@
 /* pages/Video/Video.wxss */
+.free-danmu{
+  width:100%;
+}
+.free-danmu input{
+  display: inline-block;
+}
+.free-danmu-input{
+  width:71%;
+  height:30px;
+  border:1px solid #aaa;
+  padding-left:2%;
+  margin:0 2%;
+  border-radius: 5px;
+  display: inline-block;
+}
+.free-danmu-btn{
+  width:20%;
+  height:30px;
+  background:#48c23d;
+  color:#fff;
+  padding:0% 0%;
+  margin:0% 0%;
+  font-size:30rpx;
+  border-radius: 5px;
+  display: inline-block;
+}

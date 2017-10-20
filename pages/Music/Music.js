@@ -2,7 +2,7 @@
 Page({
   data: {
     MusicList:[{
-      url: 'https://raw.githubusercontent.com/wushuxuan/PockerUI/master/Music/Music.mp3',
+      url: 'https://raw.githubusercontent.com/wushuxuan/Resources/master/Music/Music.mp3',
       image:'https://y.gtimg.cn/music/photo_new/T002R300x300M000002ZXwUj3RlnVN.jpg?max_age=2592000',
       name:'勋章',
       author:'鹿晗',
