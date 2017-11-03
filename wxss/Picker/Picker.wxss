@@ -1,28 +1,28 @@
 /* pages/Button/Button.wxss */
-.free-dialog__mask {
+.free-masklayer{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   display: none;
 }
-.free-dialog__container {
+.free-dialog-content {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 750rpx;
+  width: 100%;
   background: white;
   transform: translateY(150%);
   transition: all 0.4s ease;
   z-index: 11;
 }
-.free-dialog--show .free-dialog__container {
+.free-masklayer-show .free-dialog-content {
   transform: translateY(0);
 }
-.free-dialog--show .free-dialog__mask {
+.free-masklayer-show .free-masklayer{
   display: block;
 }
 /*模态框中的内容*/
@@ -62,4 +62,47 @@ radio-group label .free-text{
   width:100%;
   text-align: center;
   display: inline-block;
+}
+
+
+/*侧面picker*/
+.free-dialog-content-right{
+  position: fixed;
+  left: 20%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  background: white;
+  transform: translateX(150%);
+  transition: all 0.4s ease;
+  z-index: 11;
+}
+.free-masklayer-show-right .free-dialog-content-right {
+  transform: translateX(0);
+}
+.free-masklayer-show-right .free-masklayer {
+  display: block;
+}
+.free-pickerRight-buttons{
+  width:100%;
+  position:absolute;
+  bottom:0px;
+}
+.free-pickerRight-buttons>view{
+  display: inline-block;
+  width:50%;
+  font-size:13pt;
+}
+.free-pickerRight-buttons>view:nth-child(1){
+  color:#48c23d;
+  border-top:1px solid #b2b2b2;
+}
+.free-pickerRight-buttons>view:nth-child(2){
+  background:#48c23d;
+  color:#fff;
+}
+.free-buttonRight{
+  padding:2% 0;
+  text-align: center;
 }

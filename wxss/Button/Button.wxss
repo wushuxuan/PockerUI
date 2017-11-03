@@ -1,7 +1,6 @@
 /* pages/Button/Button.wxss */
 .free-btns{
   width:95%;
-  background:#fff;
   padding:20px 2.5%;
 }
 

@@ -5,6 +5,7 @@ Page({
    */
   data: {
     showDialog: false,
+    showDialogRight:false,
     items: [
       { name: '中国', value: '中国' },
       { name: '美国', value: '美国' },
@@ -38,14 +39,15 @@ Page({
     })
     console.log(this.data.value)
   },
+  /**普通picker */
   toggleDialog() {
     this.setData({
       showDialog: !this.data.showDialog
     });
   },
-  freeBack:function(){
+  freeBack: function () {
     var that = this
-    if(this.data.value=='show'){
+    if (this.data.value == 'show') {
       wx.showModal({
         title: '提示',
         content: '你没有选择任何内容',
@@ -63,8 +65,39 @@ Page({
     })
     that.setData({
       showDialog: !this.data.showDialog,
-      value:'show',
+      value: 'show',
       checked: false,
     })
   },
+  /**侧面picker */
+  toggleDialogRight(){
+    this.setData({
+      showDialogRight: !this.data.showDialogRight
+    });
+  },
+  freeBackRight: function () {
+    var that = this
+    if (this.data.value == 'show') {
+      wx.showModal({
+        title: '提示',
+        content: '你没有选择任何内容',
+      })
+    }
+    that.setData({
+      showDialogRight: !this.data.showDialogRight
+    })
+  },
+  freetoBackRight: function () {
+    var that = this
+    wx.showModal({
+      title: '提示',
+      content: '你没有选择任何内容',
+    })
+    that.setData({
+      showDialogRight: !this.data.showDialogRight,
+      value: 'show',
+      checked: false,
+    })
+  },
+  
 })

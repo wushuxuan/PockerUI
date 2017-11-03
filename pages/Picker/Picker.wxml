@@ -3,30 +3,60 @@
 <view class="container">
   <template is="free-doc-title" data="{{doc_title:'Picker 自定义选择器'}}"/>
 
-  <view class="free-btns" style="margin-top: 10vh;background:none;">
+  <view class="free-panel-title">普通picker</view>
+  <view class="free-btns">
     <button class="free-btn" bindtap="toggleDialog">
       选定国家：{{value}}
     </button>
   </view>
 
-  <view class="free-dialog {{ showDialog ? 'free-dialog--show' : '' }}">
-    <view class="free-dialog__mask" bindtap="toggleDialog" />
-    <view class="free-dialog__container">
-      <view style="padding: 5% 5% 15%;">
-        <form bindsubmit='submit' bindreset="reset">
-          <view bindtap='freetoBack' class="free-button free-dialog-reset">取消</view>
-          <view bindtap='freeBack' class="free-button free-dialog-submit">确定</view>
+  <view class="free-dialog {{ showDialog ? 'free-masklayer-show' : '' }}">
+    <view class="free-masklayer" bindtap="toggleDialog" />
+      <view class="free-dialog-content">
+        <view style="padding: 5% 5% 15%;">
+          <form bindsubmit='submit' bindreset="reset">
+            <view bindtap='freetoBack' class="free-button free-dialog-reset">取消</view>
+            <view bindtap='freeBack' class="free-button free-dialog-submit">确定</view>
 
-          <radio-group class='free-radios' bindchange="radioChange">
-            <label class="free-radio" bindtap="click" wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}" style="{{index==id?'background:#48c23d;color:#fff;':'background:#fff;color:#000;'}}">
-              <radio value="{{item.name}}" name="{{item.value}}"></radio>
-              <label class="free-text">{{item.value}}</label>
-            </label>
-          </radio-group>
-        </form>
-      
+            <radio-group class='free-radios' bindchange="radioChange">
+              <label class="free-radio" bindtap="click" wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}" style="{{index==id?'background:#48c23d;color:#fff;':'background:#fff;color:#000;'}}">
+                <radio value="{{item.name}}" name="{{item.value}}"></radio>
+                <label class="free-text">{{item.value}}</label>
+              </label>
+            </radio-group>
+          </form>
+        </view>
       </view>
-    </view>
+  </view>
+
+
+    <view class="free-panel-title">侧面picker</view>
+  <view class="free-btns">
+    <button class="free-btn" type="primary" bindtap="toggleDialogRight">
+      选定国家：{{value}}
+    </button>
+  </view>
+
+  <view class="free-dialog {{ showDialogRight ? 'free-masklayer-show-right' : '' }}">
+    <view class="free-masklayer" bindtap="toggleDialogRight" />
+      <view class="free-dialog-content-right">
+        <view style="padding: 5% 0% 15%;">
+          <form bindsubmit='submit' bindreset="reset">
+            <view class="free-panel-title">请选择所在区域</view>
+            <radio-group class='free-radios' bindchange="radioChange">
+              <label class="free-radio" bindtap="click" wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}" style="{{index==id?'background:#48c23d;color:#fff;':'background:#fff;color:#000;'}}">
+                <radio value="{{item.name}}" name="{{item.value}}"></radio>
+                <label class="free-text">{{item.value}}</label>
+              </label>
+            </radio-group>
+
+            <view class="free-pickerRight-buttons">
+              <view bindtap='freetoBackRight' class="free-buttonRight free-dialog-reset">取消</view>
+              <view bindtap='freeBackRight' class="free-buttonRight free-dialog-submit">确定</view>
+            </view>
+          </form>
+        </view>
+      </view>
   </view>
 </view>
 

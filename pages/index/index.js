@@ -24,6 +24,9 @@ Page({
         name: 'Music 音乐',
         url: '../Music/Music'
       },{
+        name: 'Toast 提示',
+        url: '../Toast/Toast'
+      },{
       name:'Button 按钮',
       url:'../Button/Button'
       },{

@@ -1,6 +1,5 @@
 {
   "pages":[
-      
   "pages/index/index",
   "pages/Map/Map",
   "pages/Card/Card",
@@ -9,9 +8,10 @@
   "pages/Video/Video",
   "pages/Music/Music",
   "pages/Image/Image",
-  "pages/Picker/Picker",
+  "pages/Toast/Toast",
   "pages/Badege/Badege",
   "pages/Button/Button",
+  "pages/Picker/Picker",
   "pages/Capsule/Capsule",
   "pages/Articles/Articles",
   "pages/progress/progress",
