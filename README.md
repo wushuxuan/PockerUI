@@ -9,4 +9,6 @@ PockerUI是我个人开发的开源小程序框架版本，结合了微信的视
 
 更多使用介绍，可以移步到我专门写的<a href="http://blog.csdn.net/Wu_shuxuan/article/details/78264125">介绍文章</a>。
 
-##![](https://github.com/wushuxuan/Resources/blob/master/image/pockerUI1.jpg)
+##小程序码
+
+![](https://github.com/wushuxuan/Resources/blob/master/image/pockerUI1.jpg)
