@@ -38,18 +38,19 @@
   float: right;
   color:#48c23d;
 }
-radio-group{
+.free-radios{
   margin:10rpx 0rpx;
 }
-radio-group>label{
+.free-radios>label{
   width:22.5%;
   display: inline-block;
   border:1px solid #ddd;
   padding:10px 0px;
   margin:0px 2px 2px;
+  text-align: center;
 }
 
-radio-group label radio{
+.free-radios label radio{
   width:100%;
   z-index: 3;
   display: none;
@@ -106,3 +107,14 @@ radio-group label .free-text{
   padding:2% 0;
   text-align: center;
 }
+
+
+
+.liang{
+  background:#48c23d;color:#fff;
+}
+
+
+
+
+
