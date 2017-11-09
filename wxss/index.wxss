@@ -1,6 +1,5 @@
 /**index.wxss**/
 @import "Map/Map.wxss";
-@import "Card/Card.wxss";
 @import "Cell/Cell.wxss";
 @import "Form/Form.wxss";
 @import "Image/Image.wxss";
@@ -13,7 +12,6 @@
 @import "progress/progress.wxss";
 @import "Template/Template.wxss";
 @import "Articles/Articles.wxss";
-@import "SearchMore/SearchMore.wxss";
 @import "navigation/navigation.wxss";
 @import "navigation/navigation.wxss";
 @import "ScrollView/ScrollView.wxss";

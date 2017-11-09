@@ -2,7 +2,7 @@
   display: inline-block;
   width:100rpx;
   height:100rpx;
-  margin:0rpx 40rpx;
+  margin:0rpx 30rpx;
   background: #ddd;
   border-radius: 10rpx;
 }

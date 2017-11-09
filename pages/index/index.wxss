@@ -6,24 +6,16 @@ page{
 /*内容*/
 .indexContent{
   width:100%;
-  margin:5px 0px;
 }
 .flex-wrap{
-  width:85%;
+  width:95%;
   background:#fff;
   margin:0% auto 2%;
-  padding:15px 5%;
+  padding:15px 2.5%;
   border-bottom:1px solid #eee;
 }
 .flex-wrap>view{
   display: inline-block;
-}
-.text-left{
-  width:80%;
-}
-.text-right{
-  width:20%;
-  font-weight: 900;
 }
 
 /*客服*/

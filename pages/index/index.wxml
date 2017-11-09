@@ -3,7 +3,7 @@
   
   <view class="doc-title">
   FreeUI
-  <view class="fontSize30" style="margin-top:5%;"> 定义组件库，项目中导入相对应的wxml代码，js和wxss即可</view>
+  <view class="free-panel-title" style="margin-top:5%;"> 定义组件库，项目中导入相对应的wxml代码，js和wxss即可</view> 
   </view>
 
 

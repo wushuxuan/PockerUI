@@ -1,18 +1,20 @@
 /**app.wxss**/
 @import "wxss/index.wxss";
+page{
+    background:#F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
 .container {
   height: 100%;
   display: flex;
+  padding:0px 10px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   overflow-x:hidden; 
 } 
-
-page{
-  background: #F9F9F9;
-}
 .indexTop{
   padding:30px 0px 20px;
   background:#fff;
@@ -29,7 +31,7 @@ page{
 }
 /*公共内容*/
 .doc-title{
-  width:90%;
+  width:100%;
   margin:20px auto 100rpx;
   padding:10px 0px;
   border-bottom: 1px solid #ddd;
@@ -41,10 +43,10 @@ page{
   margin-bottom:50rpx;
 }
 .free-panel-title{
-  width:90%;
-  margin:10px 5%;
-  color:#707070;
-  font-size:35rpx;
+  width:100%;
+  padding:2% 0;
+  color:#666;
+  font-size:14px;
 }
 /*字体*/
   .h1{
@@ -56,12 +58,6 @@ page{
 
 .fontWeight{
   font-weight: bold;
-}
-.fontSize35{
-  font-size:35rpx;
-}
-.fontSize30{
-  font-size:30rpx;
 }
 .text-right{
   font-weight: 900;
@@ -93,3 +89,5 @@ button{
   padding-left:15px;
   margin:5px 0px 15px;
 }
+
+

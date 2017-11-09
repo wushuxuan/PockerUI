@@ -2,7 +2,6 @@
   "pages":[
   "pages/index/index",
   "pages/Map/Map",
-  "pages/Card/Card",
   "pages/Cell/Cell",
   "pages/Form/Form",
   "pages/Video/Video",
@@ -16,8 +15,8 @@
   "pages/Articles/Articles",
   "pages/progress/progress",
   "pages/navigation/navigation",
-  "pages/SearchMore/SearchMore",
-  "pages/ScrollView/ScrollView"
+  "pages/ScrollView/ScrollView",
+  "pages/WaterfallFlow/WaterfallFlow"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -8,10 +8,9 @@ Page({
     RightArrow:'../../images/RightArrow.png',
     indexList: [
       {
-        name: 'Card 卡片',
-        url: '../Card/Card'
-      },
-      {
+        name: 'waterfallFlow 瀑布流',
+        url: '../WaterfallFlow/WaterfallFlow'
+      },{
         name: 'Map 地图',
         url: '../Map/Map'
       }, {
@@ -45,9 +44,6 @@ Page({
         name: 'Picker 自定义选择器',
         url: '../Picker/Picker'
       },{
-        name: 'SearchMore 查看更多',
-        url: '../SearchMore/SearchMore'
-      }, {
         name: 'Articles 长文章省略',
         url: '../Articles/Articles'
       },
@@ -114,6 +110,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+    return{
+      title: '首页',
+      path: '/pages/index/index'
+    }
   }
 })

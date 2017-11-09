@@ -6,7 +6,7 @@
 }
 .free-common-nav{
   width:20%;
-  font-size:28rpx;
+  font-size:15px;
   padding:20rpx 0;
   text-align: center;
   display: inline-block;

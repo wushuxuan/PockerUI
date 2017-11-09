@@ -4,15 +4,15 @@
 <template is="free-doc-title" data="{{doc_title:'Music 音乐'}}"/>
 
 <view class="free-panel-title">普通音乐播放控件</view>
-<view class="free-panel" style="padding-left:5%;">
-  <view class="free-Music-common">
+<view class="free-panel">
+  <view class="free-Music-common" >
     <audio wx:for="{{MusicList}}" wx:key="{{item}}" src='{{item.url}}' controls poster="{{item.image}}" name="{{item.name}}"  author="{{item.author}}" bindtimeupdate="MusicStart" bindended="MusicEnd">
     </audio>
   </view>
 </view>
 
 <view class="free-panel-title">带进度条的音乐播放控件</view>
-<view class="free-panel" style="padding-left:5%;">
+<view class="free-panel">
   <view class="free-music-progress">
     <audio bindtimeupdate="MusicStart" bindended="MusicEnd" wx:for="{{MusicList}}" wx:key="{{item}}" author="{{item.author}}" controls poster="{{item.image}}" name="{{item.name}}" src='{{item.url}}'>
       <view class="free-MusicProgress">

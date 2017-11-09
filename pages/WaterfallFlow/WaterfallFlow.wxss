@@ -1,0 +1,31 @@
+/* pages/WaterfallFlow/WaterfallFlow.wxss */
+.free-WaterfallFlow{
+  width:94%;
+  column-count:2;/*column-count 属性规定元素应该被分隔的列数：*/
+}
+.free-WaterfallFlow .flex-wrap{
+  display: inline-block;
+  width:98%;
+  margin-bottom:2%;
+  border:1px solid #ccc;
+  padding:2%;
+  padding-top:5%;
+  margin-right:2%;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  text-align: center;
+}
+.flex-wrap image{
+  width:95%;
+  margin:0 auto;
+}
+.flex-wrap view:nth-child(2){
+  font-size:15px;
+  padding:2% 0;
+  color:#717171;
+}
+.flex-wrap view:nth-child(3){
+  font-size:13px;
+  padding:2% 0;
+  color:#aaa;
+  text-align: right;
+}
