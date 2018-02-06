@@ -1,0 +1,28 @@
+<!--pages/footer/footer.wxml-->
+<view class="container">
+
+<view class="doc-header">底部链接</view>
+
+  <view class="doc-describe">普通底部链接</view>
+  <view class="doc-footer">
+      <view class="doc-footer__text">Copyright © 2018 wushuxuan</view>
+  </view>
+
+  <view class="doc-describe">双层底部链接</view>
+  <view class="doc-footer">
+      <view class="doc-footer__links">
+          <navigator url="" class="doc-footer__link">底部链接</navigator>
+      </view>
+      <view class="doc-footer__text">Copyright © 2018 wushuxuan</view>
+  </view>
+
+  <view class="doc-describe">嵌套底部链接</view>
+  <view class="doc-footer">
+      <view class="doc-footer__links">
+          <navigator url="" class="doc-footer__link">底部链接</navigator>
+          <navigator url="" class="doc-footer__link">底部链接</navigator>
+      </view>
+      <view class="doc-footer__text">Copyright © 2018 wushuxuan</view>
+  </view>
+
+</view>

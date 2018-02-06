@@ -1,0 +1,50 @@
+/* pages/Template/Template.wxss */
+/*普通提示*/
+.AllTip{ position:absolute;z-index: 15;top:0px;bottom:0px;left:0px;right:0px;background:rgba(0, 0, 0, 0.3);}
+.AllTip .Tip{  width:80%;position: absolute;z-index: 20;top:20%;left:10%;background:#fff;
+        border-radius:5px;overflow: hidden;display: flex;flex-flow: column;}
+.AllTip .Tipbg{ position:absolute;top:0px;bottom:0px;left:0px;right:0px;background:rgba(0, 0, 0, 0.3);}
+.AllTip .Tip view{ width:94%;text-align: center;}
+.AllTip .Tip view:nth-child(1){ height:50px;font-size:17px;line-height: 50px;
+                                padding:0px 3%;}
+.AllTip .Tip view:nth-child(2){ height:auto;min-height:30px;line-height:20px;font-size:14px;
+                                padding:10px 10px;color:#888;}
+.AllTip .Tip view:nth-child(3){ width:100%;border-top:1px solid #ddd;display: flex;}
+.AllTip .Tip view:nth-child(3) button{ width:50%;margin:0px;background: none;font-size:15px;padding:5px 0px;color:#108EE9;display: inline-block;flex:1;border-radius: 0px}
+.AllTip .Tip view:nth-child(3) button:nth-child(2){ color:#aaa;border-left:1px solid #ddd;}
+.AllTip .Tip view:nth-child(3) button::after{ border:none;}
+
+
+/*--抽屉式对话框--*/
+.PopupTip{position:absolute;z-index: 15;top:0px;bottom:0px;left:0px;right:0px;border-radius: 5px 5px 0px 0px;overflow: hidden}
+.PopupTip .Tip{ width:90%;height:0;padding:0px;position:fixed;bottom:0px;left:5%;transition: all 2s ease;}
+.PopupTip .Tip button{ width:100%;background:#fff;border-radius: 0px;
+                        margin:0px;border-bottom:1px solid #ddd;}
+.PopupTip .Tip button::after{ border:none;}
+.PopupTip .Tip view:last-child{ margin-top:20px;}
+.PopupTip .Tip view:last-child button{ color:#108EE9;}
+.PopupTip .Tip view:first-child button{ border-radius: 5px 5px 0px 0px}
+
+/*简单picker*/
+.simplepicker{ background: #fff;padding-bottom:20px;}
+.simplepicker .doc-flex{ width:95%;margin:0 auto;height:60px;line-height: 60px}
+.simplepicker .doc-flex button:nth-child(1){  text-align:left;color:#aaa;background:none}
+.simplepicker .doc-flex button:nth-child(2){ text-align:right;color:#108EE9;background:none}
+.simplepicker .doc-flex button::after{ border:none;}
+.simplepicker radio-group{width:90%;margin:0 auto;text-align: center;}
+.simplepicker radio-group>label{ width: 22%;height:40px;line-height:40px;display: inline-block;margin:2px !important;}
+.simplepicker radio-group label radio{ position: absolute;opacity: 0;}
+.simplepicker radio-group label label{ width:100%;display:inline-block;margin:0 auto;color:#aaa;}
+
+
+/*多选picker*/
+.multipicker{ background: #fff;padding-bottom:20px;}
+.multipicker .doc-flex{ width:95%;margin:0 auto;height:60px;line-height: 60px}
+.multipicker .doc-flex button:nth-child(1){  text-align:left;color:#aaa;background:none}
+.multipicker .doc-flex button:nth-child(2){ text-align:right;color:#108EE9;background:none}
+.multipicker .doc-flex button::after{ border:none;}
+.multipicker checkbox-group{width:90%;margin:0 auto;text-align: center;}
+.multipicker checkbox-group>label{ width: 22%;height:40px;line-height:40px;display: inline-block;margin:2px !important;border:none;}
+.multipicker checkbox-group label checkbox{ position: absolute;opacity: 0;}
+.multipicker checkbox-group label label{ width:100%;display:inline-block;margin:0 auto;color:#aaa;}
+

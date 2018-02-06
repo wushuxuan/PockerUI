@@ -1,6 +1,0 @@
-<!--pages/Map/Map.wxml-->
-<import src="../../wxss/Template/Template.wxml"/>
-<view class="container">
-  <template is="free-doc-title" data="{{doc_title:'Map 地图'}}"/>
-  <button type="primary" bindtap="getMap" style="width:80%;margin:0 auto;">查看腾讯地图获取位置</button>
-</view>

@@ -1,0 +1,22 @@
+<!--pages/Tip/Tip.wxml-->
+<import src="../../assets/wxss/Template/Template.wxml"/>
+<view class="container" style="height:{{height}}">
+  
+  <view class="doc-header">操作反馈</view>
+
+  <view class="doc-describe">普通对话框</view>
+    <view style="{{show_ordinaryTip?'':'display:none;'}}width:80%;margin:0 auto;">
+      <template is="msgTip" data="{{tipTitle:'提示',tipContent:'简单自定义弹窗'}}"/>
+    </view>
+    <button  class="button-inline button-primary" hover-class="button-primary-active" bindtap="showOrdinaryTip">普通对话框</button>
+
+
+  <view class="doc-describe">抽屉式对话框</view>
+    <view style="{{show_PopupTip?'transform: translateY(0px);':''}}" class="show_Popup">
+      <template is="PopupTip" data="{{tipTitle:'提示',tipContent:'简单自定义弹窗'}}"/>
+    </view>
+    <button  class="button-inline button-primary" hover-class="button-primary-active" bindtap="showPopupTip">抽屉式对话框</button>
+
+
+  <view style="{{show_masklayer?'display:block;':'display:none;'}}" class="show-masklayer"></view>
+</view>

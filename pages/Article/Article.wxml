@@ -1,0 +1,17 @@
+<!--pages/Article/Article.wxml-->
+<view class="container">
+  <view class="doc-header">
+    文章缩略
+  </view>
+
+  <view class="doc-describe">一行缩略</view>
+  <view class="doc-article">
+    PockerUI是我个人开发的开源小程序框架版本，结合了微信的视觉规范，为其他开发者提供统一的类库。
+  </view>
+
+  <view class="doc-describe">多行缩略</view>
+  <view class="doc-MulArticle">
+    PockerUI是我个人开发的开源小程序框架版本，结合了微信的视觉规范，为其他开发者提供统一的类库。
+    PockerUI是我个人开发的开源小程序框架版本，结合了微信的视觉规范，为其他开发者提供统一的类库。
+  </view>
+</view>

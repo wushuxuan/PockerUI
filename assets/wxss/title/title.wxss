@@ -1,0 +1,6 @@
+.doc-header{
+  width:95%;padding:20px 0px;font-size: 18px;
+}
+.doc-title{
+  width:100%;color:#666;font-size:14px;margin-top:10px;
+}

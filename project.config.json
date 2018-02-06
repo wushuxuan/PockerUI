@@ -5,12 +5,12 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": false
+		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.5.4",
+	"libVersion": "1.9.1",
 	"appid": "wxf6a995507455d41e",
-	"projectname": "FreeUI",
+	"projectname": "wxFreeUI",
 	"condition": {
 		"search": {
 			"current": -1,

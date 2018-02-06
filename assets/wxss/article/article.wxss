@@ -1,0 +1,17 @@
+.doc-article{
+  width:90%;
+  margin:0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.doc-MulArticle{
+  width:90%;
+  margin:0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}

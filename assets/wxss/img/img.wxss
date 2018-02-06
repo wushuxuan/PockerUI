@@ -1,0 +1,8 @@
+.doc-Images{width:100%;}
+
+.chooseImage{ width:78.5px;text-align:center;font-size:40px;padding:0px !important;margin:0px 5px!important;height:78.5px;line-height:78.5px;color:#ddd;border:1px solid #ddd;display:inline-block !important;border-radius: 0px}
+.chooseImage::after{ border:none;}
+
+.doc-ImageList{ height:78.5px;margin:0 5px;display: inline-block;}
+.doc-ImageList image{ width:78.5px;height:78.5px;position: relative;z-index:4px;}
+.doc-ImageList image .iconfont{ position: absolute;z-index:5px;right:5px;top:5px;}

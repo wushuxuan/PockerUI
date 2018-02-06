@@ -1,20 +1,25 @@
 //app.js
 App({
-  /*全局变量*/
+  /* 全局变量 */
   globalData: {
     userInfo: null,
-
+    width:0,
+    height:0,
   },
 
-
-
-  onLaunch: function () {
   
+  onLaunch: function () {
+    var _this = this
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    wx.getSystemInfo({
+      success: function (res) {
+        _this.globalData.height = res.windowHeight
+        _this.globalData.width = res.windowWidth
+      }
+    })
     // 登录
     wx.login({
       success: res => {
@@ -42,5 +47,4 @@ App({
       }
     })
   },
- 
 })

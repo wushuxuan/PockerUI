@@ -1,0 +1,56 @@
+<!--pages/List/List.wxml-->
+<view class="container">
+  
+  <view class="doc-header">List 列表</view>
+
+
+  <view class="doc-describe">普通列表</view>
+  <view class="doc-lists">
+    <view class="doc-listflex"  hover-class="doc-listleft-active">
+      <view class="doc-listflex-wrap doc-listleft">普通列表</view>
+    </view>
+  </view>
+
+
+  <view class="doc-describe">多列表</view>
+  <view class="doc-lists">
+    <view class="doc-listflex" hover-class="doc-listleft-active">
+      <view class="doc-view">
+        <view class="doc-listflex-wrap doc-listleft">普通列表</view>
+        <view class="doc-icon iconfont icon-right"></view>
+      </view>
+    </view>
+    <view class="doc-listflex"  hover-class="doc-listleft-active">
+     <view class="doc-view">
+       <view class="doc-listflex-wrap doc-listleft">普通列表</view>
+       <view class="doc-icon iconfont icon-right"></view>
+     </view>
+    </view>
+  </view>
+
+
+  <view class="doc-describe">带icon列表</view>
+  <view class="doc-lists">
+    <view class="doc-listflex" hover-class="doc-listleft-active">
+      <view class="doc-view">
+       <view class="doc-listleft">
+        <view class="doc-icon iconfont icon-email" style="display:inline-block;margin-right:10px;"></view>
+        <view style="display:inline-block;">普通列表</view>
+       </view>
+        <view class="doc-listflex-wrap doc-icon iconfont icon-right"></view>
+      </view>
+    </view>
+    <view class="doc-listflex"  hover-class="doc-listleft-active">
+     <view class="doc-view">
+       <view class="doc-listleft">
+        <view class="doc-icon iconfont icon-email" style="display:inline-block;margin-right:10px;"></view>
+        <view style="display:inline-block;">普通列表</view>
+       </view>
+       <view class="doc-listflex-wrap doc-icon iconfont icon-right"></view>
+     </view>
+    </view>
+  </view>
+
+
+
+</view>

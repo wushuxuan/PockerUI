@@ -1,0 +1,18 @@
+<!--pages/Audio/Audio.wxml-->
+<view class="container">
+  <view class="doc-header">播放控件</view>
+
+  <view class="doc-describe">普通播放控件</view>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+
+
+  <view class="doc-describe">带进度条的播放控件</view>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" 
+  controls loop  bindtimeupdate="audioPress">
+  <progress percent="{{audioPress}}" stroke-width="1"/>
+  </audio>
+
+  <view class="doc-describe">普通视频控件</view>
+  <video id="myVideo" src="{{videoSrc}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+
+</view>

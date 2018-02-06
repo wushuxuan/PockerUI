@@ -1,0 +1,39 @@
+<!--pages/Flex/Flex.wxml-->
+<view class="container">
+    <view class="doc-header">Flex 布局</view>
+
+
+
+    <view class="doc-describe">一格布局</view>
+    <view class="doc-flex">
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+    </view>
+
+    <view class="doc-describe">两格布局</view>
+    <view class="doc-flex">
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+    </view>
+
+    <view class="doc-describe">三格布局</view>
+    <view class="doc-flex">
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+    </view>
+
+    <view class="doc-describe">四格布局</view>
+    <view class="doc-flex">
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+    </view>
+
+    <view class="doc-describe">嵌套布局</view>
+    <view class="doc-flex">
+        <view><view class="placeholder">flex</view></view>
+        <view class="doc-flexitem"><view class="placeholder">flex</view></view>
+        <view><view class="placeholder">flex</view></view>
+    </view>
+</view>

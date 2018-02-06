@@ -1,0 +1,2 @@
+/* pages/Tip/Tip.wxss */
+button{width:60%;margin:0 auto 5px;}

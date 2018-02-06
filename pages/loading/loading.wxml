@@ -1,0 +1,18 @@
+<!--pages/loading/loading.wxml-->
+<view class="container">
+
+<view class="doc-header">上拉加载动画</view>
+
+
+      <view class="doc-loadmore">
+          <view class="doc-loading"></view>
+          <view class="doc-loadmore__tips">正在加载</view>
+      </view>
+      <view class="doc-loadmore doc-loadmore_line">
+          <view class="doc-loadmore__tips doc-loadmore__tips_in-line">暂无数据</view>
+      </view>
+      <view class="doc-loadmore doc-loadmore_line doc-loadmore_dot">
+          <view class="doc-loadmore__tips doc-loadmore__tips_in-line doc-loadmore__tips_in-dot"></view>
+      </view>
+
+</view>

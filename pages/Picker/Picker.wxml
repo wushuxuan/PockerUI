@@ -1,66 +1,23 @@
-<!--pages/Dialog/Dialog.wxml-->
-<import src="../../wxss/Template/Template.wxml"/>
+<!--pages/picker/picker.wxml-->
+<import src="../../assets/wxss/Template/Template.wxml"/>
 <view class="container">
-  <template is="free-doc-title" data="{{doc_title:'Picker 自定义选择器'}}"/>
-
-  <view class="free-panel-title">普通picker</view>
-  <view class="free-btns">
-    <button class="free-btn" bindtap="toggleDialog">
-      选定国家：{{value}}
-    </button>
+  <view class="doc-header">
+    picker 自定义
   </view>
 
-  <view class="free-dialog {{ showDialog ? 'free-masklayer-show' : '' }}">
-    <view class="free-masklayer" bindtap="toggleDialog" />
-      <view class="free-dialog-content">
-        <view style="padding: 5% 5% 15%;">
-          <form bindsubmit='submit' bindreset="reset">
-            <view bindtap='freetoBack' class="free-button free-dialog-reset">取消</view>
-            <view bindtap='freeBack' class="free-button free-dialog-submit">确定</view>
+  <view class="doc-describe">单选</view>
+   <button size="mini" class="button-inline button-primary" hover-class="button-primary-active" bindtap="chooseArea">选择地区{{chooseName}}</button>
 
-            <radio-group class='free-radios' bindchange="radioChange">
-              <label class="free-radio" bindtap="click" wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}" style="{{index==id?'background:#48c23d;color:#fff;':'background:#fff;color:#000;'}}">
-                <radio value="{{item.name}}" name="{{item.value}}"></radio>
-                <label class="free-text">{{item.value}}</label>
-              </label>
-            </radio-group>
-          </form>
-        </view>
+  <view class="doc-describe">多选</view>
+  <button size="mini" class="button-inline button-ghost" hover-class="button-ghost-active" bindtap="choosemultiArea">多选地区 : {{MutiliChooseName}}</button>
+
+      <!--单选picker模板-->
+      <view style="{{show_PopupTip?'transform: translateY(0px);':''}}" class="show_Popup">
+        <template is="picker" data="{{items:items}}"/>
       </view>
-  </view>
-
-
-    <view class="free-panel-title">侧面多选picker</view>
-  <view class="free-btns">
-    <button class="free-btn" type="primary" bindtap="toggleDialogRight">
-      选定国家：{{value}}
-    </button>
-  </view>
-
-  <view class="free-dialog {{ showDialogRight ? 'free-masklayer-show-right' : '' }}">
-    <view class="free-masklayer" bindtap="toggleDialogRight" />
-      <view class="free-dialog-content-right">
-        <view style="padding: 5% 0% 15%;">
-          <form bindsubmit='submit' bindreset="reset">
-            <view class="free-panel-title">请选择所在区域</view>
-            <checkbox-group class='free-radios' bindchange="radioChange">
-              <label bindtap="click"  wx:for="{{items}}" wx:key="{{items}}"
-              class="free-radio {{item.checked?'liang':''}}">
-                <checkbox value="{{item.name}}" name="{{item.value}}" 
-                checked="{{item.checked}}" hidden='true'></checkbox>
-                <label class="free-text">{{item.value}}</label>
-              </label>
-            </checkbox-group>
-
-            <view class="free-pickerRight-buttons">
-              <view bindtap='freetoBackRight' class="free-buttonRight free-dialog-reset">取消</view>
-              <view bindtap='freeBackRight' class="free-buttonRight free-dialog-submit">确定</view>
-            </view>
-          </form>
-        </view>
+      <!--多选picker模板-->
+      <view style="{{show_multipicker?'transform: translateY(0px);':''}}" class="show_Popup">
+        <template is="multipicker" data="{{items:items}}"/>
       </view>
-  </view>
+      <view style="{{show_masklayer?'display:block;':'display:none;'}}" class="show-masklayer"></view>
 </view>
-
-
-

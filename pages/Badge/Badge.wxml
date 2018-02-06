@@ -1,0 +1,68 @@
+<!--pages/Button/Button.wxml-->
+<view class="container">
+  <view class="doc-header">Badge 徽标数</view>
+
+  <view class="doc-describe">常见徽标数</view>
+  <view class="doc-flex">
+      <view class="doc-bdg">
+        
+      </view>
+
+       <view class="doc-bdg">
+        <view class="doc-seals">
+          <view class="doc-seal">9</view>
+        </view>
+      </view>
+
+        <view class="doc-bdg">
+          <view class="doc-seals">
+            <view class="doc-seal">19</view>
+          </view>
+         </view>
+       <view class="doc-bdg">
+        <view class="doc-seals">
+          <view class="doc-seal">99+</view>
+        </view>
+      </view>
+    </view>
+
+
+
+  <view class="doc-describe">icon印章</view>
+  <view class="doc-flex">
+    <view class="doc-bdg-img">
+      <view class="iconfont icon-email" style="font-size:70rpx;">
+        <view class="doc-icon-seal">9</view>
+      </view>
+    </view> 
+  </view> 
+  
+  
+  
+  
+  <view class="doc-describe">列表印章</view>
+  <view class="doc-lists">
+    <view class="doc-listflex" hover-class="doc-listleft-active">
+      <view class="doc-view">
+       <view class="doc-listleft">
+        <view style="display:inline-block;">普通列表</view>
+        <view  class="icon">返</view>
+        <view  class="icon">HOT</view>
+       </view>
+       <view class="doc-listflex-wrap doc-icon iconfont icon-right"></view>
+      </view>
+    </view>
+    <view class="doc-listflex"  hover-class="doc-listleft-active">
+     <view class="doc-view">
+       <view class="doc-listleft">
+        <view style="display:inline-block;">普通列表</view>
+        <view class="icon">减免</view>
+        <view class="icon">减免</view>
+        <view class="icon">减免</view>
+       </view>
+       <view class="doc-listflex-wrap doc-icon iconfont icon-right"></view>
+     </view>
+    </view>
+  </view>
+
+</view>

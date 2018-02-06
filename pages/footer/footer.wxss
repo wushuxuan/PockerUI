@@ -1,0 +1,4 @@
+/* pages/footer/footer.wxss */
+.doc-footer{
+    margin-bottom: 50px;
+}

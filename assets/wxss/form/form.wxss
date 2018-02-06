@@ -1,0 +1,63 @@
+.doc-listform{
+  width:100%;background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #ddd;
+}
+.doc-listformflex{
+  background:#fff;width:97.5%;height:50px;line-height: 50px;
+  border-bottom:1px solid #ddd;margin-left:2.5%;display:-webkit-box;display:-webkit-flex;display:flex;
+}
+.doc-listformflex>view{ -webkit-box-flex:1;-webkit-flex:1;flex:1}
+.doc-listformflex:last-child{
+  border:none;
+}
+
+.doc-listformflex input{
+  display:inline-block;width:95%;margin-right:5%;height:50px;line-height: 50px;text-align: right;
+}
+.doc-listformflex picker{
+  width:100%;height:50px;line-height: 50px;text-align: right; display: inline-block;
+}
+.doc-listformflex picker .pickerInput{
+  color:#000;
+}
+
+/*单选*/
+radio-group{
+  text-align: right
+}
+radio-group label{
+  margin-right:10px;
+}
+/*多选*/
+checkbox-group{
+  width:100%;background:#fff;line-height: 50px;
+}
+checkbox-group label{
+  display:block;width:97.5;margin-left:2.5%;background:#fff;border-bottom:1px solid #ddd;
+}
+checkbox-group label:last-child{
+  border:none;
+}
+checkbox-group  checkbox{
+  margin-right:10px;
+}
+/*多行文本*/
+textarea{
+  width:95%;padding:2.5%;
+}
+
+/*步进器*/
+.doc-formNum{
+  width:100px !important;margin-left:10%;margin-right:5%;display:-webkit-box;display:-webkit-flex;display:flex;
+}
+.doc-formNum input{
+  -webkit-box-flex:1;-webkit-flex:1;flex:1;text-align: center;margin-right:0px;
+}
+.doc-formNum button{
+  -webkit-box-flex:1;-webkit-flex:1;flex:1;border:1px solid #ddd;color:#444;
+}
+
+
+/*发送验证码*/
+.button-sendmsg{
+   width:80%;margin:10px 10%;padding:0 5px !important;
+}

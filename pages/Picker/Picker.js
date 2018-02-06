@@ -1,138 +1,131 @@
+// pages/picker/picker.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showDialog: false,
-    showDialogRight:false,
-    items: [
-      { name: '0', value: '中国', checked: false,},
-      { name: '1', value: '美国', checked: false,},
-      { name: '2', value: '巴西', checked: false,},
-      { name: '3', value: '日本', checked: false,},
-      { name: '4', value: '英国', checked: false,},
-      { name: '5', value: '法国', checked: false,},
-      { name: '6', value: '韩国', checked: false,},
-      { name: '7', value: '俄罗斯', checked: false,},],
+    show_masklayer:false,
+    show_picker:false,
+    show_multipicker:false,
+    show_masklayer:false,
+    multiArr:[],
+
+    items: [{ id: '0', value: '不限', checked: true, },
+    { id: '1', value: '中国', checked: false, },
+    { id: '2', value: '巴西', checked: false, },
+    { id: '3', value: '美国', checked: false, },
+    { id: '4', value: '英国', checked: false, },
+    { id: '5', value: '法国', checked: false, },
+    { id: '6', value: '韩国', checked: false, },
+    { id: '7', value: '俄罗斯', checked: false, },],
   },
-  click:function(e){
-    console.log(e)
-    var id = e.currentTarget.dataset.id
-    var that = this
-    that.setData({
-      id: id
+
+  /**简单选择地区按钮 */
+  chooseArea: function () {
+    this.setData({
+      show_PopupTip:true,
+      show_masklayer:true
     })
   },
-  radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e)
-    var that = this
-    that.setData({
-      value: e.detail.value
+  /**多选地区按钮 */
+  choosemultiArea:function() {
+    this.setData({
+      show_multipicker: true,
+      show_masklayer: true
     })
-    console.log(this.data.value)
-    var items = this.data.items;
+  },
+  /**确定按钮 */
+  comfirm:function(e){
+    this.setData({
+      show_PopupTip: false,
+      show_masklayer: false,
+      show_multipicker:false,
+    })
+  },
+  /**单选地区 */
+  chooseRadio: function(e) {
+    for (let i in this.data.items) {
+      this.data.items[i].checked = false
+    }
+    this.data.items[e.currentTarget.dataset.id].checked = !this.data.items[e.currentTarget.dataset.id].checked
     console.log(this.data.items)
-    var checkArr = e.detail.value;
-    console.log(e.detail.value)
-    for (var i = 0; i < items.length; i++) {
-      if (checkArr.indexOf(i + "") != -1) {
-        items[i].checked = true;
-      } else {
-        items[i].checked = false;
+    this.setData({
+      items: this.data.items,
+      chooseName: ' : '+this.data.items[e.currentTarget.dataset.id].value,
+    })
+  },
+  /**多选地区 */
+  choosemultiRadio:function(e){
+    if (e.currentTarget.dataset.id!=0){
+      this.data.items[0].checked = false
+      this.data.items[e.currentTarget.dataset.id].checked = !this.data.items[e.currentTarget.dataset.id].checked
+      this.data.multiArr.push(e.currentTarget.dataset.id)
+    }else{
+      for (let i in this.data.items) {
+        this.data.items[i].checked = false
       }
+      this.data.items[0].checked = true
+      this.data.multiArr = []
     }
     this.setData({
-      items: items
-    })  
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /**普通picker */
-  toggleDialog() {
-    this.setData({
-      showDialog: !this.data.showDialog
-    });
-  },
-  freeBack: function () {
-    var that = this
-    if (this.data.value == 'show') {
-      wx.showModal({
-        title: '提示',
-        content: '你没有选择任何内容',
+      items: this.data.items,
+      MutiliChooseName: this.data.multiArr
       })
-    }
-    that.setData({
-      showDialog: !this.data.showDialog
-    })
   },
-  freetoBack: function () {
-    var that = this
-    wx.showModal({
-      title: '提示',
-      content: '你没有选择任何内容',
-    })
-    that.setData({
-      showDialog: !this.data.showDialog,
-      value: 'show',
-      checked: false,
-    })
-  },
-  /**侧面picker */
-  toggleDialogRight(){
-    this.setData({
-      showDialogRight: !this.data.showDialogRight
-    });
-  },
-  freeBackRight: function () {
-    var that = this
-    if (this.data.value == 'show') {
-      wx.showModal({
-        title: '提示',
-        content: '你没有选择任何内容',
-      })
-    }
-    that.setData({
-      showDialogRight: !this.data.showDialogRight
-    })
-  },
-  freetoBackRight: function () {
-    var that = this
-    wx.showModal({
-      title: '提示',
-      content: '你没有选择任何内容',
-    })
-    that.setData({
-      showDialogRight: !this.data.showDialogRight,
-      value: 'show',
-      checked: false,
-    })
-  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
   
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
+  }
 })

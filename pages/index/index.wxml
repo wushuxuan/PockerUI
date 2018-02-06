@@ -1,18 +1,69 @@
 <!--index.wxml-->
 <view class="container">
   
-  <view class="doc-title">
-  FreeUI
-  <view class="free-panel-title" style="margin-top:5%;"> 定义组件库，项目中导入相对应的wxml代码，js和wxss即可</view> 
+  <view class="doc-header">
+    FreeUI
+  <view class="doc-title"> 定义组件库，项目中导入相对应的wxml代码，js和wxss即可</view> 
   </view>
 
-
-  <view class="indexContent">
-    <navigator wx:for="{{indexList}}" wx:key="{{indexList}}" class="flex-wrap fontSize35" url="{{item.url}}">
-        <view class="text-left">{{item.name}}</view>
-        <view class="free-icon-right"></view>
+  <view class="doc-flex" style="width:95%;background:#fff;">
+    <navigator class="doc-flexitem" url="../Button/Button">
+        <view class="doc-listleft">Btn 按钮</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../List/List">
+        <view class="doc-listleft">List 列表</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../Flex/Flex">
+        <view class="doc-listleft">Flex 布局</view>
     </navigator>
   </view>
 
-  <!--客服对话-->
+  <view class="doc-flex" style="width:95%;">
+    <navigator class="doc-flexitem" url="../Img/Img">
+        <view class="doc-listleft">Img 图片</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../Audio/Audio">
+        <view class="doc-listleft">播放控件</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../Nav/Nav">
+        <view class="doc-listleft">Nav 导航</view>
+    </navigator>
+  </view>
+
+  <view class="doc-flex" style="width:95%;">
+    <navigator class="doc-flexitem" url="../Badge/Badge">
+        <view class="doc-listleft">徽标数</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../Article/Article">
+        <view class="doc-listleft">文章缩略</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../picker/picker">
+        <view class="doc-listleft">picker 自定义</view>
+    </navigator>
+  </view>
+
+  <view class="doc-flex" style="width:95%;">
+    <navigator class="doc-flexitem" url="../Form/Form">
+        <view class="doc-listleft">数据录入</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../Show/Show">
+        <view class="doc-listleft">数据展示</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../Tip/Tip">
+        <view class="doc-listleft">操作反馈</view>
+    </navigator>
+  </view>
+
+  <view class="doc-flex" style="width:95%;">
+    <navigator class="doc-flexitem" url="../loading/loading">
+        <view class="doc-listleft">上拉加载动画</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="../footer/footer">
+        <view class="doc-listleft">底部链接</view>
+    </navigator>
+    <navigator class="doc-flexitem" url="">
+        <view class="doc-listleft">更新中...</view>
+    </navigator>
+  </view>
+
 </view>

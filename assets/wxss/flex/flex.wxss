@@ -1,0 +1,2 @@
+.doc-flex{width:95%;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:flex}
+.doc-flexitem{-webkit-box-flex:1;-webkit-flex:1;flex:1}

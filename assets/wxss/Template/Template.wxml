@@ -1,0 +1,66 @@
+<!--pages/Template/Template.wxml-->
+<!--普通对话框-->
+<template name="msgTip">
+  <view class="AllTip">
+    <view class="Tipbg"></view>
+    <view class="Tip">
+        <view>{{tipTitle}}</view>
+        <view>{{tipContent}}</view>
+        <view><button bindtap="confirm">确定</button><button>取消</button></view>
+    </view>
+  </view>
+</template>
+
+<!--抽屉式对话框-->
+<template name="PopupTip">
+  <view class="PopupTip">
+    <view class="Tip" style="{{show_PopupTip?'':'height:auto;'}}">
+      <view><button bindtap="confirm">菜单一</button></view>
+      <view><button bindtap="confirm">菜单二</button></view>
+      <view><button bindtap="confirm">菜单三</button></view>
+
+      <view><button bindtap="confirm">返回上一级</button></view>
+    </view>
+  </view>
+</template>
+
+<!--自定义简单picker-->
+<template name="picker">
+  <view class="simplepicker">
+      <form bindsubmit='submit' bindreset="reset">
+      <view class="doc-flex">
+        <button bindtap='comfirm' class="doc-flexitem">取消</button>
+        <button bindtap='comfirm' class="doc-flexitem">确定</button>
+      </view>
+
+        <radio-group bindchange="radioChange">
+          <label wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}" bindtap='chooseRadio'>
+            <radio value="{{item.name}}" name="{{item.value}}"></radio>
+            <label class="free-text"  style="{{item.checked?'border:1px solid #108EE9;color:#108EE9':''}}">{{item.value}}</label>
+          </label>
+        </radio-group>
+      </form>
+  </view>
+</template>
+
+
+
+<!--自定义多选picker-->
+<template name="multipicker">
+  <view class="multipicker">
+      <form bindsubmit='submit' bindreset="reset">
+      <view class="doc-flex">
+        <button bindtap='comfirm' class="doc-flexitem">取消</button>
+        <button bindtap='comfirm' class="doc-flexitem">确定</button>
+      </view>
+
+        <checkbox-group bindchange="radioChange">
+          <label wx:for="{{items}}" wx:key="{{items}}" data-id="{{index}}" bindtap='choosemultiRadio'>
+            <checkbox value="{{item.name}}" name="{{item.value}}"></checkbox>
+            <label class="free-text"  style="{{item.checked?'border:1px solid #108EE9;color:#108EE9':''}}">{{item.value}}</label>
+          </label>
+        </checkbox-group>
+      </form>
+  </view>
+</template>
+

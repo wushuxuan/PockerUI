@@ -1,0 +1,14 @@
+<!--pages/live/live.wxml-->
+<view class="container">
+  <view class="doc-header">Img 图片</view>
+
+  <view class="doc-describe">上传图片</view>
+    <view class="doc-Images">
+      <view  wx:for="{{imageList}}" wx:key="{{item}}"  class="doc-ImageList">
+        <image src="{{item}}"> 
+        <text data-index='{{index}}'  class="iconfont icon-close" style="color:rgba(0,0,0,0.3)"  bindtap="deleteImg"></text>
+      </image>
+    </view>
+      <button bindtap="ChooseImage" class="chooseImage">+</button>
+    </view>
+</view>

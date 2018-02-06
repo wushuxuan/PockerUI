@@ -1,69 +1,83 @@
 // pages/Form/Form.js
+var util = require("../../utils/check.js");
+var interval = null
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    region: ['广东省', '广州市', '海珠区'],
+    date: '请选择籍贯',
     items: [
-      { name: '0', value: '女' },
-      { name: '1', value: '男' },
-    ]
+      { name: 'man', value: '男' },
+      { name: 'woman', value: '女', checked: 'true' },
+    ],
+    textMaxLen:150,
+    textareaNum:0,
+    formNum:0,
+    sendMsg:'发送验证码',
   },
-  Free_form_picker:function(e){
-      var that = this
-      that.setData({
-        region: e.detail.value
-      })
-      console.log(e.detail.value[1])
-  },
-  idChange:function(e){
-    var id = e.currentTarget.dataset.id
-    var that = this
-    that.setData({
-      id: id
+  bindDateChange: function (e) {
+    this.setData({
+      pickerInput:true,
+      date: e.detail.value
     })
-    if(id==0){
-      that.setData({
-        sex:'女'
+  },
+  textareaIn:function(e){
+    this.setData({
+      textareaNum:e.detail.cursor
+    })
+  },
+  /**购买数量的加减 */
+  AddformNum:function(){
+    this.setData({
+      formNum: this.data.formNum+1
+    })
+  },
+  MinusformNum: function () {
+    if (this.data.formNum>0){
+      this.setData({
+        formNum: this.data.formNum - 1
       })
     }else{
-      that.setData({
-        sex: '男'
+      
+    }
+  },
+  /**验证手机号 */
+  checkphone:function(e){
+    var checkphone = util.checkPhone(e.detail.value);
+    this.data.checkphone = checkphone;
+    if (!checkphone){
+      wx.showToast({
+        title: '手机号格式错误',
       })
     }
   },
-  AjaxTel:function(e){
-    console.log(e.detail.value)
-    var telnumber = e.detail.value
-    if (telnumber==''){
-      wx.showModal({
-        title: '提示',
-        content: '手机号不能为空',
+  /**发送验证码动态 ( 要先判断手机号是否为空 )    
+   * 如使用发送验证码动态，请把if（!this.data.checkphone）改成if（this.data.checkphone）
+   * */
+  sendMsg:function(){
+    console.log(this.data.checkphone)
+    if (!this.data.checkphone){
+      this.setData({
+        sendMsg:'60 秒'
       })
-    } else if (telnumber.length<11){
-      wx.showModal({
-        title: '提示',
-        content: '请输入长度11位的电话号',
-      })
+      var currentTime = 60
+      var that = this
+      interval = setInterval(function () {
+        currentTime--;
+        that.setData({
+          sendMsg: currentTime + ' 秒'
+        })
+        if (currentTime <= 0) {
+          clearInterval(interval)
+          currentTime = 61
+          that.setData({
+            sendMsg: '重新发送',
+          })
+        }
+      }, 1000)  
     }
-  },
-  Submit:function(e){
-    var telnumber = e.detail.value.telnumber
-    if (telnumber == '') {
-      wx.showModal({
-        title: '提示',
-        content: '手机号不能为空',
-      })
-    } else if (telnumber.length < 11) {
-      wx.showModal({
-        title: '提示',
-        content: '请输入长度11位的电话号',
-      })
-    }
-    console.log(e.detail.value)
-    console.log(this.data.sex)
   },
   /**
    * 生命周期函数--监听页面加载

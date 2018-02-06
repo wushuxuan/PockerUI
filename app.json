@@ -1,27 +1,26 @@
 {
-  "pages":[
-  "pages/index/index",
-  "pages/Map/Map",
-  "pages/Cell/Cell",
-  "pages/Form/Form",
-  "pages/Video/Video",
-  "pages/Music/Music",
-  "pages/Image/Image",
-  "pages/Toast/Toast",
-  "pages/Badege/Badege",
-  "pages/Button/Button",
-  "pages/Picker/Picker",
-  "pages/Capsule/Capsule",
-  "pages/Articles/Articles",
-  "pages/progress/progress",
-  "pages/navigation/navigation",
-  "pages/ScrollView/ScrollView",
-  "pages/WaterfallFlow/WaterfallFlow"
+  "pages": [
+    "pages/index/index",
+    "pages/footer/footer",
+    "pages/loading/loading",
+    "pages/Nav/Nav",
+    "pages/Tip/Tip",
+    "pages/Article/Article",
+    "pages/Badge/Badge",
+    "pages/List/List",
+    "pages/Img/Img",
+    "pages/Show/Show",
+    "pages/Audio/Audio",
+    "pages/Form/Form",
+    "pages/Flex/Flex",
+    "pages/Button/Button",
+    "assets/wxss/Template/Template",
+    "pages/picker/picker"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#393A3F",
-    "navigationBarTitleText": "PockerUI",
-    "navigationBarTextStyle":"white"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "FreeUI",
+    "navigationBarTextStyle": "black"
   }
 }

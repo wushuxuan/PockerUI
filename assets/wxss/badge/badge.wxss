@@ -1,0 +1,78 @@
+/* assets/wxss/badge.wxss */
+.doc-bdg{
+  display: inline-block;
+  width:100rpx;
+  height:100rpx;
+  margin:0rpx 30rpx;
+  background: #ddd;
+  border-radius: 10rpx;
+}
+.doc-bdg .doc-seals{
+  position: relative;
+}
+.doc-seal{
+  position: absolute;
+  top: -0.8em;
+  right: 0px;
+  padding:0px 10rpx;
+  background:red;
+  color:#fff;
+  height:1.6em;
+  min-width: 1.6em;
+  line-height: 1.6;
+  font-size: 10px;
+  border-radius: 0.8em;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(50%);
+  z-index: 10;
+  transform-origin: -10% center;
+  box-sizing: border-box;
+}
+
+/*icon印章*/
+.doc-bdg-img{
+  display: inline-block;
+  width:100rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  margin:0rpx 30rpx;
+  border-radius: 10rpx;
+}
+.doc-bdg-img .iconfont{
+  position: relative;
+}
+.doc-bdg-img .doc-icon-seal{
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding:0px 10rpx;
+  background:red;
+  color:#fff;
+  height:1.6em;
+  min-width: 1.6em;
+  line-height: 1.6;
+  font-size: 10px;
+  border-radius: 0.8em;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(50%);
+  z-index: 10;
+  transform-origin: -10% center;
+  box-sizing: border-box;
+}
+
+/*列表*/
+.doc-listleft>view.icon:nth-child(2){
+    display:inline-block;background:#F96268;color:#fff;height:20px;margin-top:15px;border-radius: 10px;
+    line-height:20px;text-align: center;font-size:10px;margin-right:5px;padding:0 8px;
+}
+.doc-listleft>view.icon:nth-child(3){
+    display:inline-block;background:#F19736;color:#fff;height:20px;margin-top:15px;border-radius: 10px;
+    line-height:20px;text-align: center;font-size:10px;margin-right:5px;padding:0 8px;
+}
+.doc-listleft>view.icon:nth-child(4){
+    display:inline-block;background:#21B68A;color:#fff;height:20px;margin-top:15px;border-radius: 10px;
+    line-height:20px;text-align: center;font-size:10px;margin-right:5px;padding:0 8px;
+}

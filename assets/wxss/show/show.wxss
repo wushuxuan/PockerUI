@@ -1,0 +1,21 @@
+/* pages/Show/Show.wxss */
+.doc-swiper{
+  width:100%;position: relative;height:160px;background:#DEF1E5;
+}
+.doc-swiper view{
+  background:#4390F7;color:#fff;width:100%;margin:0 8px;height:120px;
+  line-height:120px;margin-top:20px;text-align:center;font-weight:bold;font-size:20px;
+}
+/*activeSwiper*/
+.activeSwiper{
+  margin-top:10px !important;
+}
+
+/*通告栏*/
+.doc-notice{
+  width:100%;background:#FEFCEC;height:35px;display: inline-flex;flex-flow: row;
+}
+.doc-notice view,.doc-notice swiper{display: inline-block;}
+.doc-notice view{height:35px;line-height: 35px;width:10% !important;text-align:center;color:#F76A24;}
+.doc-notice .doc-noticeSwiper{width:80%;height:35px;}
+.doc-notice .doc-noticeSwiper view{height:100%;line-height: 35px;color:#F76A24;font-size:12px;}

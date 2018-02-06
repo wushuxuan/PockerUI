@@ -1,0 +1,31 @@
+@import './title/title.wxss';
+@import './list/list.wxss';
+@import './button/button.wxss';
+@import './form/form.wxss';
+@import './flex/flex.wxss';
+@import './show/show.wxss';
+@import './Template/Template.wxss';
+@import './img/img.wxss';
+@import './nav/nav.wxss';
+@import './badge/badge.wxss';
+@import './article/article';
+@import './loading/loading';
+@import './footer/footer';
+.doc-describe{
+  width:95%;margin:0 auto;padding:10px 0px;color: #737373;
+}
+
+/*抽屉型弹窗*/
+.show-masklayer{
+  position:fixed;top:0px;bottom:0px;left:0px;right:0px;background:rgba(0, 0, 0, 0.3);
+}
+.show_Popup{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  transform: translateY(250px);
+  transition: all 0.4s ease;
+  z-index: 11;
+}

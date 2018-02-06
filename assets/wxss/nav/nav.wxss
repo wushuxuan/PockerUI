@@ -1,0 +1,27 @@
+.doc-commonNavs{
+  width:100%;
+  margin:0 auto;
+  background:#fff;
+}
+.doc-Navslist{
+  display:flex;
+}
+.doc-navTitle{
+  width:20%;
+  flex:1;
+  font-size:15px;
+  padding:35rpx 0;
+  text-align: center;
+  position: relative;
+  border-bottom:1px solid #ddd;
+}
+.doc-navTitle>view{ position: absolute;right:3px;top:5px;background:#FF762E;color:#fff;
+              height:1.6em;min-width: 1.6em;line-height: 1.6; padding:0px 10rpx;font-size: 10px;border-radius: 0.8em;}
+.doc-navnContent{
+  width:100%;
+  padding:120rpx 0;
+  margin-top:20rpx;
+  text-align: center;
+  display: none;
+  border-bottom:3px solid #eee;
+}

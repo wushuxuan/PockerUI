@@ -1,0 +1,70 @@
+<!--pages/Show/Show.wxml-->
+<view class="container">
+<view class="doc-header">数据展示</view>
+
+<view class="doc-describe">普通轮播图</view>
+<swiper class="doc-swiper" indicator-dots="{{indicatorDots}}" circular="{{circular}}" bindchange="swiperChange"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block>
+    <swiper-item>
+      <view style="width:100%;height:100%;margin:0px;">Swiper</view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item>
+      <view style="width:100%;height:100%;margin:0px;background:#33D977;">Swiper</view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item>
+      <view style="width:100%;height:100%;margin:0px;background:#F9471C;">Swiper</view>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="doc-describe">轮播图</view>
+<swiper class="doc-swiper" indicator-dots="{{indicatorDots}}" circular="{{circular}}" bindscroll="swiperChange" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" previous-margin="25" next-margin="25" indicator-dots="true" indicator-color="#ccc" indicator-active-color="#888">
+  <block>
+    <swiper-item>
+      <view  class="{{swiperID==0?'activeSwiper':''}}">{{swiperID}} == 0</view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item>
+      <view  class="{{swiperID==1?'activeSwiper':''}}" style="background:#33D977;">{{swiperID}} == 1</view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item>
+      <view  class="{{swiperID==2?'activeSwiper':''}}"  style="background:#F9471C;">{{swiperID}} == 2</view>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class="doc-describe">通告栏</view>
+<view class="doc-notice">
+  <view class="iconfont icon-notice"></view>
+  <swiper class="doc-noticeSwiper" indicator-dots="{{indicatorDots}}" 
+  circular="{{circular}}" bindchange="swiperChange" vertical="true"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block><swiper-item><view>Swiper one</view></swiper-item></block>
+    <block><swiper-item><view>Swiper two</view></swiper-item></block>
+  </swiper>
+</view>
+
+<view class="doc-describe">通告栏</view>
+<view class="doc-notice">
+  <view class="iconfont icon-notice"></view>
+  <swiper class="doc-noticeSwiper" indicator-dots="{{indicatorDots}}" 
+  circular="{{circular}}" bindchange="swiperChange"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block><swiper-item><view>Swiper one</view></swiper-item></block>
+    <block><swiper-item><view>Swiper two</view></swiper-item></block>
+  </swiper>
+</view>
+
+
+</view>

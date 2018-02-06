@@ -1,9 +1,0 @@
-<!--pages/Cell/Cell.wxml-->
-<view class="container">
-  <view class="doc-title">Template 模板</view>
-
-  <view class="free-panel">
-  <view class="free-panel-title" style="width:100%;">模板使用 (模板在pages/Template.wxml里)</view>
-  
-  </view>
-</view>
